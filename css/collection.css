@@ -11,7 +11,7 @@
 /* MAIN CSS */
 @import url("bootstrap.min.css");
 @import url("typography.css");
-@import url("theme.css");
+@import url("main.css");
 @import url("responsive.css");
 @import url('color.css');
 @import url("custom.css");
