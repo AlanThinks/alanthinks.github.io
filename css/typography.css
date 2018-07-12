@@ -1,0 +1,168 @@
+/* Preview page styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.56; }
+  
+  h1 {
+    font-size: 48px;
+    line-height: 1.25;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 1.25;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  h5 {
+    font-size: 18px;
+    line-height: 1.55;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  .logo {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  .header-links ul li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.66;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  
+  .about-me-info .span-title {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  
+  .about-me-info .span-title + span {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .site-btn {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  
+  .project-date {
+    font-size: 14px;
+    line-height: 1.4; }
+  
+  .projects-filter ul li {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  
+  .form-wrapper .form-group label, .form-wrapper .form-group .help-block, .form-wrapper .form-group .help-block-success {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  
+  .site-input {
+    font-size: 14px;
+    line-height: 1.4; }
+  
+  .copyright {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .resume-box .resume-info-title h5 {
+    line-height: 25px; }
+  
+  .resume-box .resume-date {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .legend {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .content table tr th {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif; }
+  
+  .content table tr td {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .content blockquote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500; }
+  
+  .content blockquote span {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; }
+  
+  .project-info-line .info-line .span-title {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif; }
+  
+  .project-info-line .info-line .span-title + span {
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .highcharts-axis-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 20px; }
+  
+  .highcharts-xaxis-labels text, .highcharts-yaxis-labels text {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 20px !important; }
+  
+  .highcharts-legend-item text {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif !important; }
+  
+  .legend-highchart {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif !important; }
+  
+  .highchart-title-desc {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 20px !important; }
+  
+  /*# sourceMappingURL=maps/typography.css.map */

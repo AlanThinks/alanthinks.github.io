@@ -1,0 +1,141 @@
+/* Media max-height */
+@media screen and (max-height: 670px) {
+    .first-screen-box .about-me-info {
+      display: none; } }
+  
+  @media screen and (max-height: 530px) {
+    .first-screen-box .main-avatar {
+      display: none; } }
+  
+  @media screen and (max-height: 400px) {
+    .first-screen-box .about-me .opacity-box {
+      display: none; } }
+  
+  /* Media max-height */
+  /* Media max-width */
+  @media screen and (max-width: 1199px) {
+    .sidebar-form {
+      width: 293px; }
+    .project-info-line .info-line {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px; }
+    .project-info-line .info-line .span-title {
+      width: 85px;
+      margin-right: 0;
+      float: left; }
+    .project-info-line .info-line .span-title + span {
+      padding-left: 85px;
+      display: block; } }
+  
+  @media screen and (max-width: 991px) {
+    .container {
+      padding: 0 30px; }
+    .header {
+      padding: 27px 0 28px; }
+    .header.active {
+      padding: 27px 0 28px; }
+    .section {
+      padding: 30px 0; }
+    .section.projects-section {
+      padding: 30px 0 0; }
+    h3 {
+      font-size: 24px;
+      line-height: 1.5; }
+    .full-height{
+      display: flex;}
+    .first-screen-box {
+      text-align: center;
+      padding: 0 30px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      position: relative;
+      margin: auto 0}
+    .first-screen-box .about-title {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 1px; }
+    .first-screen-box .site-btn {
+      margin: 0; }
+    .main-avatar {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 20px; }
+    .form-wrapper .submit-holder {
+      text-align: center; }
+    .mt-wrapper {
+      margin-top: 52px; }
+    .section.single-project-section {
+      padding: 28px 0 30px; } }
+  
+  @media screen and (max-width: 991px) and (max-height: 530px) {
+    .first-screen-box .main-avatar {
+      display: inline-block; } }
+  
+  @media screen and (max-width: 991px) and (max-height: 450px) {
+    .first-screen-box .main-avatar {
+      display: none; } }
+  
+  @media screen and (max-width: 991px) and (max-height: 400px) {
+    .first-screen-box .about-me .opacity-box {
+      display: block; } }
+  
+  @media screen and (max-width: 991px) and (max-height: 330px) {
+    .first-screen-box .about-me .opacity-box {
+      display: none; } }
+  
+  @media screen and (max-width: 767px) {
+    .modal-dialog {
+      margin: 15px auto;
+      width: 100%;
+      max-width: 650px; }
+    .modal {
+      padding-left: 15px !important;
+      padding-right: 15px !important; }
+    .modal-body {
+      padding: 30px; }
+    .modal-buttons {
+      text-align: center; }
+    .modal-buttons .site-btn {
+      display: block;
+      width: 170px;
+      margin: 0 auto 30px; }
+    .modal-buttons .site-btn:last-child {
+      margin-bottom: 0; }
+    .modal-buttons .site-btn.btn-theme-blue {
+      float: none; }
+    .footer {
+      padding: 20px 0; } }
+  
+  @media screen and (max-width: 767px) and (max-height: 530px) {
+    .first-screen-box .main-avatar {
+      display: inline-block; } }
+  
+  @media screen and (max-width: 767px) and (max-height: 485px) {
+    .first-screen-box .main-avatar {
+      display: none; } }
+  
+  @media screen and (max-width: 767px) and (max-height: 380px) {
+    .first-screen-box .about-me .opacity-box {
+      display: none; } }
+  
+  @media screen and (max-width: 480px) and (max-height: 570px) {
+    .first-screen-box .main-avatar {
+      display: none; } }
+  
+  @media screen and (max-width: 480px) and (max-height: 450px) {
+    .first-screen-box .about-me .opacity-box {
+      display: none; } }
+  
+  @media screen and (max-width: 360px) and (max-height: 620px) {
+    .first-screen-box .main-avatar {
+      display: none; } }
+  
+  @media screen and (max-width: 360px) and (max-height: 500px) {
+    .first-screen-box .about-me .opacity-box {
+      display: none; } }
+  
+  /* Media max-width */
+  
+  /*# sourceMappingURL=maps/responsive.css.map */
