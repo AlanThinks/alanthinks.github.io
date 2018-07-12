@@ -57,7 +57,14 @@
       vertical-align: top;
       margin-bottom: 1px; }
     .first-screen-box .site-btn {
-      margin: 0; }
+      margin: 8px;
+      padding:10px;
+      min-width: 100px;
+      font-size: 10px
+    }
+    p.my-story{
+      font-size:13px;
+    }
     .main-avatar {
       display: inline-block;
       vertical-align: top;
