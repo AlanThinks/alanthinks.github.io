@@ -3,24 +3,29 @@ $(function() {
         preventSubmit: true,
 
         submitError: function($form, event, errors) {
-
+            console.log("submit error")
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-
-            var thisForm = event.target.getAttribute('id');
-
-            var name = $('#' + thisForm).find("input.name-input").val();
-            var email = $('#' + thisForm).find("input.email-input").val();
-            var message = $('#' + thisForm).find("textarea.textarea").val();
+            console.log("submit success")
+            let thisForm = event.target.getAttribute('id');
+            console.log(thisForm)
+            let name = $('#' + thisForm).find("input.name-input").val();
+            let company = $('#' + thisForm).find("input.company-input").val();
+            let email = $('#' + thisForm).find("input.email-input").val();
+            let phone = $('#' + thisForm).find("input.phone-input").val();
+            let message = $('#' + thisForm).find("textarea.textarea").val();
+            console.log(name, company,phone,email, message)
 
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/code@alanthinks.com",
                 type: "POST",
                 dataType: 'json',
                 data: {
                     name: name,
+                    company: company,
+                    phone, phone,
                     email: email,
                     message: message
                 },
