@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-8">
-                    <a href="#top-main-section" class="logo">
+                    <a id="top-left-logo" href="#top-main-section" class="logo">
                         <div class="header-avatar">
                             <img src="img/alanthinks-round-face.png" alt="">
                         </div>
@@ -34,9 +34,6 @@
                         <ul>
                             <li>
                                 <a href="#projects">My Projects</a>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#about-me-modal">About Me</a>
                             </li>
                             <li>
                                 <a href="download/Resume.pdf" download>Resumé</a>
@@ -72,9 +69,6 @@
                             <a href="#projects">My Projects</a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#about-me-modal">About Me</a>
-                        </li>
-                        <li>
                             <a href="download/Resume.pdf" download>Resumé</a>
                         </li>
                         <li>
@@ -90,7 +84,7 @@
 
     <div class="wrapper">
 
-        <div id="top-main-section" class="first-screen">
+        <section id="top-main-section" class="first-screen">
             <div class="container full-height">
                 <div class="row full-height">
                     <div class="col-lg-6 col-md-8 col-xs-12 full-height">
@@ -148,15 +142,15 @@
                                 </p>
                             </div>
                             <div class="first-screen-buttons">
-                                <a class="site-btn btn-theme-white" href="#projects">Projects</a>
-                                <a class="site-btn btn-theme-white-tr" href="download/Resume.pdf" download>Resumé</a>
-                                <a class="site-btn btn-theme-white-tr" href="#contact-section">Contact me</a>
+                                <a id="projects-big-btn" class="site-btn btn-theme-white" href="#projects">Projects</a>
+                                <a id="resume-big-btn" class="site-btn btn-theme-white-tr" href="download/Resume.pdf" download>Resumé</a>
+                                <a id="contact-big-btn" class="site-btn btn-theme-white-tr">Contact me</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div id="projects" class="projects-section section">
             <div class="container">
@@ -554,7 +548,7 @@
     <script src="js/contact_me.js"></script>
 
     <!--STYLE-->
-    <script src="js/style.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

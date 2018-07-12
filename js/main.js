@@ -163,6 +163,51 @@ $(document).ready(function () {
         });
     }
 
+    // if($('section').is('.top-main-section')){
+    //     $('.first-screen-buttons ul li a[href*="#"],').on('click', function(event){
+    //         event.preventDefault();
+    //         var anchor = $(this).attr('href');
+    //         if($(anchor).position()){
+    //             $('html, body').stop().animate({
+    //                 scrollTop: $(anchor).offset().top
+    //             }, 800);
+    //         }
+    //     });
+    // }
+
+    // Animate Smooth Scroll
+$('#projects-big-btn').on('click', function() {
+    const projects = $('#projects').position().top;
+  
+    $('html, body').animate(
+      {
+        scrollTop: projects
+      },
+      900
+    );
+  });
+  $('#contact-big-btn').on('click', function() {
+    const contactSection = $('#contact-section').position().top;
+  
+    $('html, body').animate(
+      {
+        scrollTop: contactSection
+      },
+      900
+    );
+  });
+  $('#top-left-logo').on('click', function() {
+    const topMainSection = $('#top-main-section').position().top;
+  
+    $('html, body').animate(
+      {
+        scrollTop: topMainSection
+      },
+      900
+    );
+  });
+  
+
 
     //open bootstrap modal from modal
     $(document).on('hidden.bs.modal', '.modal', function () {
@@ -250,9 +295,6 @@ $(document).ready(function () {
     if($('span').is('#sharing-links')){
         $('#sharing-links').socialLikes();
     }
-
-
-
 
 
 });
