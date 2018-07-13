@@ -210,6 +210,7 @@
   .btn-download{
     float: none;
   }
+
   
 }
 
@@ -248,7 +249,15 @@
  .btn-download{
    float: right;
  }
+ .resume-box .resume-info:before {
+  left: 35px;
 }
+}
+@media (max-width:766px){
+  .resume-box .resume-info:before {
+   left: 25px;
+ }
+ }
 /* Media max-width */
 
 /*# sourceMappingURL=maps/responsive.css.map */
