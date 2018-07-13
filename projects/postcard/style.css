@@ -1,0 +1,91 @@
+body{
+    background-color: #614c51;
+    font-family: Almendra, sans-serif;
+}
+
+.main{
+    
+    position: sticky;
+    width: 500px;
+    height: 345px;
+    margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    padding: 15px;
+    background-color:  #fefdef;
+    border: none;
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: 5px 5px 20px #330912;
+    
+}
+
+h1{
+    font-family: Sofia, cursive;
+    color: #dc3d5e;
+    text-align: center;
+}
+
+.left{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    width: 300px;
+    float: left;
+}
+
+.left p:first-child{
+    font-size:1.2em; 
+    font-weight: bolder;
+    
+}
+.right{
+    position: relative;
+    right:25px;
+    top: 5px;
+    float: right;
+}
+
+.card-body{
+    margin-top: 20%;
+    margin-right: 20px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px dashed;
+    color: #dc3d5e;
+    background-color: transparent;
+    width: 150px
+}
+
+.submit-box{
+    text-align: center;
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+button{
+    background-color: #dc3c5e; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform:translateX(-50%);
+    box-shadow: 2px 2px 13px #330912;
+    border-radius: 6px;
+}
+button:active{
+    padding: 14px 31px;
+}
+
+button:hover{
+    background-color: #bf2e4d;
+}

@@ -49,6 +49,12 @@
   .header.active {
     padding: 27px 0 28px;
   }
+  .projects-header {
+    padding: 27px 0 28px;
+  }
+  .projects-header.active {
+    padding: 27px 0 28px;
+  }
   .section {
     padding: 30px 0;
   }
@@ -95,7 +101,7 @@
     text-align: center;
   }
   .mt-wrapper {
-    margin-top: 52px;
+    margin-top: 65px;
   }
   .section.single-project-section {
     padding: 28px 0 30px;
@@ -223,6 +229,18 @@
     font-size: 10px;
     margin-left: 10px;
   }
+  .projects-header .info-row {
+    opacity: 1;
+    display: inline;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .projects-header.active .info-row {
+    opacity: 1;
+    display: inline;
+    font-size: 10px;
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) and (max-height: 570px) {
@@ -260,14 +278,19 @@
  .btn-download{
    float: right;
  }
+ .btn-github{
+  float: right;
+}
  .resume-box .resume-info:before {
   left: 35px;
 }
 .header .info-row {
   display: inline;
   font-size: 12px;
-  -webkit-transition: opacity .3s ease;
-    transition: opacity .3s ease;
+}
+.projects-header .info-row {
+  display: inline;
+  font-size: 12px;
 }
 }
 @media (max-width:766px){

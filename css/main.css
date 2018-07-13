@@ -169,6 +169,49 @@ body {
     font-size: 12px;
     margin-left: 10px;
 }
+.projects-header {
+  padding: 57px 0 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 555;
+  color: #fff;
+  -webkit-transition: padding-top 0.3s ease, padding-bottom 0.3s ease,
+    background 0.3s ease;
+  transition: padding-top 0.3s ease, padding-bottom 0.3s ease,
+    background 0.3s ease;
+}
+
+.projects-header.active {
+  padding: 15px 0;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projects-header.active .logo {
+  padding-left: 40px;
+}
+
+.projects-header.active .header-avatar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.projects-header .info-row {
+  opacity: 0;
+  display: inline;
+  font-size: 11px;
+  margin-left:-50px;
+}
+
+.projects-header.active .info-row {
+  opacity: 1;
+    display: inline;
+    font-size: 12px;
+    margin-left: 10px;
+}
 .logo {
   position: relative;
   -webkit-transition: padding 0.3s ease;
@@ -680,7 +723,7 @@ body {
 }
 
 .mt-wrapper {
-  margin-top: 90px;
+  margin-top: 25px;
 }
 
 .project-single-first-box {
