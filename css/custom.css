@@ -45,3 +45,6 @@ color: #ff005c;
     color: grey;
     margin-bottom: 5px;
 }
+.btn-small-width{
+min-width: 100px;    
+}

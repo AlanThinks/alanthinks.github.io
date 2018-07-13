@@ -149,10 +149,11 @@
     text-align: center;
   }
   .modal-buttons .site-btn {
+    font-size: 11px;
     display: block;
-    width: 170px;
-    margin: 0 auto 30px;
-  }
+    max-width: 280px;
+    margin: 0 auto 15px;
+}
   .modal-buttons .site-btn:last-child {
     margin-bottom: 0;
   }
