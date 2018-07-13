@@ -421,6 +421,9 @@ body {
 .opacity-box {
   opacity: 0.8;
 }
+.opacity-box .modal-img img{
+  opacity: 1;
+}
 
 .about-me-info {
   margin-bottom: 30px;
