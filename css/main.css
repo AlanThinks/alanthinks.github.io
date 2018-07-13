@@ -505,15 +505,17 @@ a {
   
   .modal-img img {
     max-width: 100%; }
-  
+  .resume-box{
+    margin-bottom: 15px;
+  }
   .resume-box .resume-title {
     border-bottom: #ff0049 1px solid;
-    margin-bottom: 5px;}  
+    margin-bottom: 10px;}  
   .resume-box .resume-desc {
     margin-bottom: 30px; }
   
   .resume-box .resume-info {
-    margin-bottom: 30px; }
+    padding-bottom: 25px; }
   
   .resume-box .resume-info-title {
     margin-bottom: 2px; }

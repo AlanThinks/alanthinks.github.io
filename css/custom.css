@@ -24,3 +24,25 @@ color: #ff005c;
 .alanthinks-hover a:hover{
     color:#ff0037;
 }
+
+.resume-box .resume-info:before {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #ff0037;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    left: 35px;
+}
+
+.resume-info{
+    border-left: 2px solid #ff0037;
+    padding-left: 20px;
+}
+
+.resume-info .resume-company{
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 5px;
+}
