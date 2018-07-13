@@ -211,8 +211,18 @@
   .btn-download{
     float: none;
   }
-
-  
+  .header .info-row {
+    opacity: 1;
+    display: inline;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .header.active .info-row {
+    opacity: 1;
+    display: inline;
+    font-size: 10px;
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) and (max-height: 570px) {
@@ -252,6 +262,12 @@
  }
  .resume-box .resume-info:before {
   left: 35px;
+}
+.header .info-row {
+  display: inline;
+  font-size: 12px;
+  -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
 }
 }
 @media (max-width:766px){
