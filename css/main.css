@@ -156,18 +156,20 @@ body {
 
 .header .info-row {
   opacity: 0;
+  visibility: hidden;
   display: inline;
   font-size: 11px;
-  margin-left:-50px;
-  -webkit-transition: opacity .3s ease;
-    transition: opacity .3s ease;
+  margin-left: -50px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .header.active .info-row {
+  visibility: visible;
   opacity: 1;
-    display: inline;
-    font-size: 12px;
-    margin-left: 10px;
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
 }
 .projects-header {
   padding: 57px 0 8px;
@@ -203,14 +205,14 @@ body {
   opacity: 0;
   display: inline;
   font-size: 11px;
-  margin-left:-50px;
+  margin-left: -50px;
 }
 
 .projects-header.active .info-row {
   opacity: 1;
-    display: inline;
-    font-size: 12px;
-    margin-left: 10px;
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
 }
 .logo {
   position: relative;

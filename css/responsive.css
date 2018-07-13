@@ -281,6 +281,9 @@
  .btn-github{
   float: right;
 }
+.btn-live{
+  float: right;
+}
  .resume-box .resume-info:before {
   left: 35px;
 }

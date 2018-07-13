@@ -207,6 +207,18 @@ $('#projects-big-btn').on('click', function() {
     );
   });
   
+  $('#see-live-project-btn').on('click', function() {
+    const liveProject = $('#live-project').position().top;
+  
+    $('html, body').animate(
+      {
+        scrollTop: liveProject
+      },
+      900
+    );
+  });
+  
+  
 
 
     //open bootstrap modal from modal
