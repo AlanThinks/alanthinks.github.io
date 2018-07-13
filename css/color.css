@@ -57,7 +57,7 @@ body {
     box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2); }
   
   .btn-theme-blue:active {
-    background: #0b65bf;
+    background: #ff005c;
     -webkit-box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2);
     box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2); }
   
@@ -76,10 +76,10 @@ body {
     box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2); }
   
   .btn-theme-blue-tr:active {
-    background: #0b65bf;
+    background: #ff005c;
     -webkit-box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2);
     box-shadow: 0 10px 20px 0 rgba(5, 117, 230, 0.2);
-    border-color: #0b65bf; }
+    border-color: #ff005c; }
   
   .project:hover .project-name {
     color: #ff005c; }

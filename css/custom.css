@@ -9,3 +9,18 @@
 .message-success{
     margin-bottom: 15px;
 }
+
+.btn-download{
+    font-size: 10px;
+    padding:5px;
+}
+a.alanthinks-link{
+    color: #ff0037;
+    }
+a.alanthinks-link:hover{
+color: #ff005c;
+}
+
+.alanthinks-hover a:hover{
+    color:#ff0037;
+}

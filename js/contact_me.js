@@ -29,11 +29,8 @@ $(function() {
                 cache: false,
                 success: function(data) {
                     if(data.error){
-	                    console.log('error');
                     }
                     else if(data.success){
-                        console.log("submit success")
-
 	                    // Success message
                         $('#send-message-modal').modal();
 	                    //clear all fields

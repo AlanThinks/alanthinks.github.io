@@ -298,7 +298,8 @@ a {
     margin-bottom: 30px; }
   
   .about-title {
-    max-width: 532px; }
+    max-width: 532px;
+  margin-bottom: .5em; }
   
   .opacity-box {
     opacity: 0.8; }
@@ -506,8 +507,8 @@ a {
     max-width: 100%; }
   
   .resume-box .resume-title {
-    margin-bottom: 1px; }
-  
+    border-bottom: #ff0049 1px solid;
+    margin-bottom: 5px;}  
   .resume-box .resume-desc {
     margin-bottom: 30px; }
   
