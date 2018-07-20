@@ -98,17 +98,17 @@ a.alanthinks-link:hover {
   font-size: 15px;
 }
 
-.single-project-row h4{
+.single-project-row h4 {
   border-bottom: #ff0037 1px solid;
   margin-bottom: 6px;
 }
 
-.more-projects h5{
- font-size: 13px;
+.more-projects h5 {
+  font-size: 13px;
 }
-.more-projects .tags li{
+.more-projects .tags li {
   font-size: 10px;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 3px 7px;
- }
+}

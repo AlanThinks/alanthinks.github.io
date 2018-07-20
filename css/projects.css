@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+}
+
+site-btn {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.site-btn {
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-theme-blue-tr {
+  border: 3px solid;
+}
+
+.btn-github {
+  opacity: 0.6;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  padding: 5px;
+  min-width: 100px;
+  color: white;
+  background: #ff005c;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+}
+.btn-github:hover {
+  opacity: 1;
+  color: #ff005c;
+  background: white;
+  text-decoration: none;
+}
+.btn-fixed-group {
+  position: fixed;
+  top: 1.5%;
+  right: 1.5%;
+  z-index: 1;
+}
