@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="img/alanthinks-round-face.png">
 </head>
 
-<body>
+<body onload="typeWriter()">
 
     <!-- Loader -->
     <div id="page-preloader">
@@ -106,10 +106,26 @@
                                 <div class="about-title">
                                     <h4 class="hidden-md hidden-lg">Hello, I'm Alan Guevara
                                         <br>A Creative & Resourceful
-                                        <br>Full Stack Developer</h4>
+                                        <br>
+                                        <div style="min-height:50px">
+                                            <div id="typed-strings-sm">
+                                                <p>Full Stack Web Developer</p>
+                                                <p>Video Producer</p>
+                                                <p>Designer</p>
+                                            </div>
+                                            <span id="job-title-sm" style="white-space:pre;"></span>
+                                        </div>
+                                    </h4>
                                     <h3 class="hidden-sm hidden-xs">Hello, I'm Alan Guevara,
                                         <br>A Creative & Resourceful
-                                        <br>Full Stack Developer</h3>
+                                        <br>
+                                        <div id="typed-strings">
+                                            <p>Full Stack Web Developer</p>
+                                            <p>Video Producer</p>
+                                            <p>Designer</p>
+                                        </div>
+                                        <div id="job-title" style="white-space:pre;min-height: 45px"></div>
+                                    </h3>
                                 </div>
                                 <div class="opacity-box">
                                     <p style="margin-bottom:9px">
@@ -676,8 +692,36 @@
         <script src="js/jqBootstrapValidation.js"></script>
         <script src="js/contact_me.js"></script>
 
-        <!--STYLE-->
+        <!--Main-->
+        <script src="js/typed/typed.min.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
+        <script>
+
+            let typeWriter = function () {
+                new Typed("#job-title", {
+                    stringsElement: "#typed-strings",
+                    loop: true,
+                    loopCount: Infinity,
+                    typeSpeed: 50,
+                    backSpeed: 20,
+                    showCursor: false,
+                    startDelay: 500,
+                    backDelay: 1000,
+                });
+                new Typed("#job-title-sm", {
+                    stringsElement: "#typed-strings-sm",
+                    loop: true,
+                    loopCount: Infinity,
+                    typeSpeed: 50,
+                    backSpeed: 20,
+                    showCursor: false,
+                    startDelay: 500,
+                    backDelay: 1000,
+                });
+            }
+
+            typeWriter()
+        </script>
     </span>
 </body>
 
