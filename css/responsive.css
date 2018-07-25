@@ -258,7 +258,6 @@
     margin-right: 9px;
   }
 }
-
 @media screen and (max-width: 480px) and (max-height: 570px) {
   .first-screen-box .main-avatar {
     width: 60px;
@@ -321,7 +320,13 @@
     padding: 20px;
   }
   .youtube-video {
-    height: 350px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .youtube-video {
+    height: 225px;
   }
 }
 @media (max-width: 766px) {
@@ -332,3 +337,30 @@
 /* Media max-width */
 
 /*# sourceMappingURL=maps/responsive.css.map */
+
+@media (max-width: 767px) {
+  .youtube-video {
+    height: 320px;
+  }
+}
+
+@media (max-width: 485px) {
+  .youtube-video {
+    height: 210px;
+  }
+}
+@media (min-width: 768px) {
+  .youtube-video {
+    height: 160px;
+  }
+}
+@media (min-width: 992px) {
+  .youtube-video {
+    height: 225px;
+  }
+}
+@media (min-width: 1200px) {
+  .youtube-video {
+    height: 300px;
+  }
+}
