@@ -1,5 +1,3 @@
 # AlanThinks' Portfolio Page
 
-### Still Under Construction
-
-Check Out [My Portolio Here](http://alanthinks.com)
+👉 Check Out My Portfolio here [AlanThinks.com](http://alanthinks.com)
