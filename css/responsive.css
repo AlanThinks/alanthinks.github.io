@@ -247,6 +247,9 @@
     padding: 20px;
     margin-bottom: 20px;
   }
+  .youtube-video {
+    height: 210px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -274,11 +277,17 @@
     width: 60px;
     height: 60px;
   }
+  .youtube-video {
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 360px) and (max-height: 500px) {
   .first-screen-box .about-me .opacity-box {
     display: none;
+  }
+  .youtube-video {
+    height: 150px;
   }
 }
 
@@ -310,6 +319,9 @@
     border: #8080802e 1px solid;
     border-radius: 10px;
     padding: 20px;
+  }
+  .youtube-video {
+    height: 350px;
   }
 }
 @media (max-width: 766px) {
