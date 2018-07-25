@@ -242,7 +242,10 @@
     margin-right: 2px;
   }
   .project {
-    margin-bottom: 15px;
+    border: #8080802e 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -303,7 +306,6 @@
   }
 
   .project {
-    margin-bottom: 30px;
     margin-bottom: 30px;
     border: #8080802e 1px solid;
     border-radius: 5px;
