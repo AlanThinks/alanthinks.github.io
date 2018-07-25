@@ -1,2 +1,2 @@
 # AlanThinks' Portfolio Page
-👉 Check Out My PortFolio at [AlanThinks.com](http://alanthinks.com)
+👉 Check Out My Portfolio here [AlanThinks.com](http://alanthinks.com)
