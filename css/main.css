@@ -421,7 +421,7 @@ body {
 .opacity-box {
   opacity: 0.8;
 }
-.opacity-box .modal-img img{
+.opacity-box .modal-img img {
   opacity: 1;
 }
 
@@ -602,13 +602,12 @@ body {
 
 .project {
   display: block;
-  margin-bottom: 30px;
   -webkit-transition: none;
   transition: none;
 }
 
 .project .project-img {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   position: relative;
   overflow: hidden;
 }
