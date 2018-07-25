@@ -1,0 +1,110 @@
+body {
+  background-color: #302f2f !important;
+}
+.card {
+  border: 1px solid black;
+  background-color: #262626;
+  color: white;
+  box-shadow: 1px 1px 20px black;
+}
+.card-columns {
+  column-gap: 0rem;
+  margin: 10px;
+}
+.card-columns .card:first-child {
+  box-shadow: none;
+}
+.nav-tabs {
+  background-color: #302f2f;
+  border-bottom: none;
+}
+
+.mycard {
+  background-color: white;
+  color: purple;
+}
+
+.modal-content {
+  background-color: #444444;
+  color: #e5e3e3;
+}
+.lightbtn {
+  color: #e5e3e3;
+}
+
+.form-control,
+textarea {
+  background-color: #333333;
+  color: #e5e3e3;
+}
+
+.post-title {
+  text-align: left;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.post-date {
+  text-align: right;
+  width: 50%;
+  float: right;
+}
+.likes {
+  margin-top: 1rem;
+}
+.card-text {
+  text-align: left;
+}
+.card-footer {
+  text-align: center;
+  padding: 0.75rem 0.55rem;
+}
+.commentz {
+  float: left;
+  width: 90%;
+  margin-left: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+.heartbreak {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+  float: left;
+}
+.heartbreak:hover {
+  color: #ad0000;
+  transition: 0.6s;
+}
+.heartbreak:active {
+  color: white;
+  transition: 0.1s;
+}
+.form-control:focus {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  color: #bfbfbf;
+}
+.cards-spacing {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.little-btn {
+  margin: 3px;
+}
+
+@media screen and (max-width: 430px) {
+  .new-post {
+    content: '<i class="far fa-edit"></i>';
+  }
+}
+@media screen and (min-width: 431px) {
+  .new-post {
+    content: "Create A New Post";
+  }
+}

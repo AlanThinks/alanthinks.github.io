@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="shortcut icon" href="/projects/paper-to-do-list-app/alanthinks-round-face.png">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/projects.css">
+
+    <title>CodeGram</title>
+</head>
+
+<body>
+    <div class="btn-fixed-group" style="top: 85%; right:4%">
+        <a style="opacity:1" href="../../index.html#projects" target="_self" class="site-btn btn-theme-blue-tr btn-github">
+            <i class="fas fa-arrow-alt-circle-left"></i> Projects</a>
+        <a style="opacity:1" target="_blank" class="site-btn btn-theme-blue-tr btn-github" href="https://github.com/alanthinks/bootstrap-instagram-clone">
+            <i class="fab fa-github"></i> Code</a>
+    </div>
+
+
+    <div class="modal fade" id="createNewPost" tabindex="-1" role="dialog" aria-labelledby="createNewPost" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Create New Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+
+                            <button type="button" class="little-btn btn btn-outline-secondary lightbtn">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                            <button type="button" class="little-brn btn btn-outline-secondary lightbtn">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-success" data-dismiss="modal">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-around" style="box-shadow: 1px 1px 20px black; margin-bottom: 10px; padding-left: 5%;z-index:3; position:fixed; width: 100%; background-color: #515151; color:white;">
+        <div class="col d-flex justify-content-about d-flex align-items-center">
+            <h5>
+                <i style="margin-right:.15em;" class="fab fa-instagram"></i>CodeGram</h5>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-warning new-post" style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px"
+                data-toggle="modal" data-target="#createNewPost">Create A New Post</button>
+            <div class="dropdown d-flex align-items-center">
+                <button class="btn btn-primary dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: none; color: gray;">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createNewPost">Edit Profile</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createNewPost">Account Settings</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createNewPost">Log Out</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <ul class="nav nav-tabs nav-pills justify-content-center" id="myTab" role="tablist" style="padding-top: 75px; background-color: #302f2f; border-bottom: none;">
+        <li class="nav-item" style="background-color: transparent">
+            <a style="background-color: transparent; color: white;" class="nav-link active" id="masonry-tab" data-toggle="tab" href="#masonry"
+                role="tab" aria-controls="home" aria-selected="true">
+                <i class="fas fa-th-large"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a style="background-color: transparent; color: white;" class="nav-link" id="feed-tab" data-toggle="tab" href="#feed" role="tab"
+                aria-controls="profile" aria-selected="false">
+                <i class="fas fa-images"></i>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="tab-content" style="background-color: #302f2f">
+        <div class="tab-pane active" id="masonry" role="tabpanel" aria-labelledby="masonry-tab">
+            <div class="card-columns">
+                <div class="card">
+                    <img class="card-img" src="https://www.probytes.net/wp-content/uploads/2018/01/4-1.png" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://media.makeameme.org/created/cant-tell-if-3sriqt.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://i.pinimg.com/736x/c3/74/49/c37449119246b9e4b4161b00c96490d2--programming-humor-nerd-geek.jpg"
+                        alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://img.devrant.com/devrant/rant/r_138738_5YPWF.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIASGFghADaFzM5i2LxM5DF8RjR3KpymHApBPVrog6Vqfh8bVZ"
+                        alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://media1.tenor.com/images/ab5ee72270f3903008fe73c2b38b2465/tenor.gif?itemid=7190988" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://wyncode.co/wp-content/uploads/2014/08/171.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://i.pinimg.com/736x/09/fc/0f/09fc0f8be9ca809022bf5015a6247d00--microsoft-windows-windows-.jpg"
+                        alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://memeexplorer.com/cache/846.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://cdn-images-1.medium.com/max/500/1*qZoBA3wFh-82y2N3qQCdpw.jpeg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhR15WdoKsYxkgen-jilcv1I2VZlxYKQ7JYOw2_-18C2QgURuVHA"
+                        alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://i.pinimg.com/736x/f6/18/96/f61896dd497a339161fc306f807865e3--programming-harry-potter.jpg"
+                        alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://blog.theodo.fr/wp-content/uploads/2018/01/debugging-css.gif" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="http://starecat.com/content/wp-content/uploads/wife-id-css-right-100-percent-margin-0.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://cdn-images-1.medium.com/max/1600/0*d8OZIzh-3QJ6eeoH.jpg" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://pics.astrologymemes.com/css-fail-designers-joke-27924726.png" alt="Card image">
+                </div>
+                <div class="card">
+                    <img class="card-img" src="https://starecat.com/content/wp-content/uploads/cobol-programming-studio-dinosaurs-trex.jpg" alt="Card image">
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:10px" class="tab-pane" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+            <div class="col-md-9 col-sm-11 justify-content-center" style="margin: auto">
+                <div class="cards-spacing">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="post-title">Skyrim</span>
+                            <span class="post-date">8/2018</span>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="http://allthatsinteresting.com/wordpress/wp-content/uploads/2014/10/game-scenery-skyrim-stone-halls.jpg"
+                                alt="Card image cap">
+                            <p class="card-text likes">12,098 Likes</p>
+                            <p class="card-text">This is a very special moment in my life #breathecode #iphone #instalikes #igers</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-heartbeat heartbreak"></i>
+                            <input class="form-control commentz" type="text" placeholder="Comments...">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-spacing">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="post-title">Bioshock Infinite</span>
+                            <span class="post-date">8/2018</span>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="http://allthatsinteresting.com/wordpress/wp-content/uploads/2014/10/game-scenery-bioshock-floating-city.jpg"
+                                alt="Card image cap">
+
+                            <p class="card-text likes">19,245 Likes</p>
+                            <p class="card-text">This is a very special moment in my life #breathecode #iphone #instalikes #igers</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-heartbeat heartbreak"></i>
+                            <input class="form-control commentz" type="text" placeholder="Comments...">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-spacing">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="post-title">Witcher 3</span>
+                            <span class="post-date">10/2018</span>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://the-artifice.com/wp-content/uploads/2016/06/witcher-3-landscape.jpg" alt="Card image cap">
+                            <p class="card-text likes">5,245 Likes</p>
+                            <p class="card-text">This is a very special moment in my life #breathecode #iphone #instalikes #igers</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-heartbeat heartbreak"></i>
+                            <input class="form-control commentz" type="text" placeholder="Comments...">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-spacing">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="post-title">Pikmin</span>
+                            <span class="post-date">8/2018</span>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="http://allthatsinteresting.com/wordpress/wp-content/uploads/2014/10/game-scenery-pikmin-red.jpg"
+                                alt="Card image cap">
+                            <p class="card-text likes">15,343 Likes</p>
+                            <p class="card-text">This is a very special moment in my life #breathecode #iphone #instalikes #igers</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-heartbeat heartbreak"></i>
+                            <input class="form-control commentz" type="text" placeholder="Comments...">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-spacing">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="post-title">Okami</span>
+                            <span class="post-date">8/2018</span>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="http://allthatsinteresting.com/wordpress/wp-content/uploads/2014/10/game-scenery-okami-orochis-cave.jpg"
+                                alt="Card image cap">
+                            <p class="card-text likes">8,245 Likes</p>
+                            <p class="card-text">This is a very special moment in my life #breathecode #iphone #instalikes #igers</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-heartbeat heartbreak"></i>
+                            <input class="form-control commentz" type="text" placeholder="Comments...">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
