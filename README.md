@@ -26,5 +26,8 @@
 
 Thanks for taking the time to read this! I made the [React "Paper" To-Do App](http://alanthinks.com/projects/paper-to-do-list-app/index.html) just to put on this page, make sure you check it both in desktop and mobile, and of course make sure you _~Eat The Cookies~!_
 
-- Alan G.
-  [_aka: AlanThinks_](http://AlanThinks.com)
+Thank you!
+
+Alan G.
+
+[_aka: AlanThinks_](http://AlanThinks.com)
