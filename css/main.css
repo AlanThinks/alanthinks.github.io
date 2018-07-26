@@ -243,9 +243,9 @@ body {
   height: 100%;
 }
 
-/* .point:after {
+.point:after {
   content: ".";
-} */
+}
 
 .header-links {
   display: inline-block;
