@@ -140,3 +140,7 @@ a.alanthinks-link:hover {
     display: none;
   }
 }
+
+.project-name em {
+  font-size: 12px;
+}
