@@ -1,18 +1,16 @@
-
-
 /* Fonts */
 /* @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata"); */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 @import url("materialdesignicons.min.css");
 
 /* PLUGIN CSS */
-@import url("../assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css");
+/* @import url("../assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css"); */
 
 /* MAIN CSS */
 @import url("bootstrap.min.css");
 @import url("typography.css");
 @import url("main.css");
 @import url("responsive.css");
-@import url('color.css');
+@import url("color.css");
 @import url("custom.css");
