@@ -147,6 +147,7 @@ body {
 
 .header.active .logo {
   padding-left: 40px;
+  display: inline-block;
 }
 
 .header.active .header-avatar {
