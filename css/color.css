@@ -17,9 +17,9 @@ body {
   color: #ff005c;
 }
 
-.header.active .point:after {
+/* .header.active .point:after {
   color: #ff005c;
-}
+} */
 
 .header.active .mobile-btn > div {
   background: #ff005c;
