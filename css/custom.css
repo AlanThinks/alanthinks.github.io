@@ -148,3 +148,18 @@ a.alanthinks-link:hover {
   font-size: 12px;
   color: #c1c1c1;
 }
+
+i.x-close-icon {
+  position: absolute;
+  right: 17px;
+  top: 8px;
+  font-size: 25px;
+  color: #e0e0e0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+i.x-close-icon:hover {
+  color: #ff0037 !important;
+  font-size: 29px;
+  cursor: pointer;
+}
