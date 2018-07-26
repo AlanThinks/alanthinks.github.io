@@ -22,6 +22,11 @@
 
 3.  Definitely I think the biggest challenge was making the website look beautiful and behave well on small screen devices such as the iPhone 4, I'm still learning about the best way to use Media Queries, I think my code in that particular area is not as clean as it could be because I may have made a redundant amount of Media Queries.
 
+## What's Next
+
+1.  I'm updating my Contact List App (React) to upload to the page
+2.  I'd like to create some [Web Components](http://webcomponents.org) out of my project containers.
+
 ## The End
 
 Thanks for taking the time to read this! I made the [React "Paper" To-Do App](http://alanthinks.com/projects/paper-to-do-list-app/index.html) just to put on this page, make sure you check it both in desktop and mobile, and of course make sure you _~Eat The Cookies~!_
