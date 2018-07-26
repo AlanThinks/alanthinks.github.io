@@ -604,6 +604,8 @@ body {
   display: block;
   -webkit-transition: none;
   transition: none;
+  border: #e4e4e4 1px solid;
+  border-radius: 10px;
 }
 
 .project .project-img {
@@ -638,6 +640,7 @@ body {
   margin-bottom: 4px;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  line-height: 1;
 }
 
 .project .project-date {
@@ -645,7 +648,7 @@ body {
 }
 
 .project:hover .project-name {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .project:hover .project-img img {
