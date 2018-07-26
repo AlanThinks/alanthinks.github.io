@@ -4,8 +4,8 @@
 
 ## How Was This Built?
 
-1.  After importing a starting-point HTML/CSS Template I completely revamped the CSS to reflect my branding.
-2.  And re-designed a few sections such as the project containers, the resumé modal and several other design elements, adding the "GitHub Code Tabs" as well as the tech stack "labels" amongst other things.
+1.  After importing a starting-point HTML/CSS template I completely revamped the CSS to reflect my branding.
+2.  Then I re-designed a few sections such as the project containers, the resumé modal and several other design elements, adding the "GitHub Code Tabs" as well as the tech stack "labels" amongst other things.
 3.  I then modified and added some of my own scrolling animations.
 4.  The Project/Portfolio filter was done using [Isotop](https://isotope.metafizzy.co/), Highly recommended!
 5.  Although I did use [SmoothScroll](http://www.smoothscroll.net/) for some scrolling animation, I ended up using more some of my own I made, althought they were more redundant, it made it much easier for me to modify it for different buttons and anchors.
@@ -16,11 +16,11 @@
 
 ## Challenges
 
-1.  Took me a little bit to get _Typed.js_ to work how I wanted because from all the documentation I read there was no way to select which is the last string that would hold once the loops were done, I wanted to do this because I didn't want the loop to go forever, I was concerned about performance, but alas I haven't yet found a good looking way to do it so I'll be getting to that later for the the loop is on _"Infinity"_ .
+1.  Took me a little bit to get _Typed.js_ to work how I wanted because from all the documentation I read there was no way to select which is the last string that would hold once the loops were done, I wanted to do this because I didn't want the loop to go forever, I was concerned about performance, but alas I haven't yet found a good looking way to do it so I'll be getting to that later for now the the loop is on _"Infinity"_ .
 
 2.  The YouTube thumbnails were a bit of a challenge to get them to properly be responsive since they are a YouTube iframe, ended up setting the height to 100% inline and then through media query classes I changed the width of the iframe and its container.
 
-3.  Definitely I think the biggest challenge was making the website look beautiful and behave well on small screen devices such as the iPhone 4, I'm still learning about the best way to use Media Queries, I think my code in that particular area is not particularly clean because I may have made a redundant amount of Media Queries.
+3.  Definitely I think the biggest challenge was making the website look beautiful and behave well on small screen devices such as the iPhone 4, I'm still learning about the best way to use Media Queries, I think my code in that particular area is not as clean as it could be because I may have made a redundant amount of Media Queries.
 
 ## The End
 
