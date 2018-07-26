@@ -24,8 +24,8 @@
 
 ## What's Next
 
-1.  I'm updating my Contact List App (React) to upload to the page
-2.  I'd like to create some [Web Components](http://webcomponents.org) out of my project containers.
+1.  I'd like to create some [Web Components](http://webcomponents.org) out of my project containers.
+2.  I'm updating my Contact List App (React) to upload to the page
 
 ## The End
 
