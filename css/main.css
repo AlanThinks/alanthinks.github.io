@@ -505,6 +505,7 @@ body {
 .btn-theme-white-tr {
   border: 3px solid #fff;
   padding: 12px 15px;
+  cursor: pointer;
 }
 
 .btn-theme-white-tr:hover {
@@ -543,7 +544,9 @@ body {
 .section-title {
   margin-bottom: 30px;
 }
-
+.section-title h3 {
+  display: inline-block;
+}
 .projects-wrapper {
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
@@ -911,7 +914,7 @@ body {
 /* content styles */
 /* contact */
 .contact-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 15px; */
 }
 
 .form-wrapper .form-group {
