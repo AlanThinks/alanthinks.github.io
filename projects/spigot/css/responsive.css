@@ -1,6 +1,3 @@
-@media (min-width: 576px) .container {
-}
-
 @media (min-width: 1200px) {
   .container {
     max-width: 960px;
@@ -48,7 +45,7 @@
   header .header-text {
     text-align: center;
   }
-  .cta-box button {
+  .barcelona-cta {
     line-height: 1;
   }
   .btn-subtext {
@@ -57,10 +54,24 @@
   .btn-subtext-mobile {
     display: inline-block;
   }
+
+  /* .barcelona-cta-fix {
+    position: static;
+    transition: 0.3s all ease;
+  } */
 }
 
 @media (max-width: 350px) {
   .container {
     width: 115%;
+  }
+}
+
+@media (max-width: 450px) {
+  .barcelona-cta {
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+    transition: 0.3s all ease;
   }
 }
