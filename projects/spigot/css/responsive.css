@@ -27,6 +27,12 @@
     float: left;
     left: 100px;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 492px) {
@@ -50,4 +56,11 @@
   .btn-subtext-mobile {
     display: inline-block;
   }
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 115%;
+  }
+  .;
 }
