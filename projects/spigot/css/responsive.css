@@ -66,13 +66,16 @@
 
 @media (max-width: 350px) {
   .container {
-    width: 115%;
+    width: 110%;
   }
   .barcelona-cta {
     font-size: 1rem;
   }
   .btn-subtext-mobile {
     font-size: 0.6rem;
+  }
+  .value-box {
+    max-width: 400px;
   }
 }
 
