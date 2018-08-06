@@ -14,6 +14,15 @@
   .container {
     background-size: inherit;
   }
+  .value-text {
+    width: 75%;
+    font-size: 0.9rem;
+    vertical-align: baseline;
+  }
+
+  .value-item:nth-child(2) .value-text {
+    vertical-align: super;
+  }
   .fixed-img {
     width: 200px;
   }
@@ -37,17 +46,6 @@
   .fixed-img {
     width: 150px;
   }
-
-  .value-text {
-    width: 65%;
-    font-size: 0.9rem;
-    vertical-align: baseline;
-  }
-
-  .value-item:nth-child(2) .value-text {
-    vertical-align: super;
-  }
-
   header .header-text {
     text-align: center;
   }
