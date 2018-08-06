@@ -29,9 +29,10 @@
   }
   h1 {
     font-size: 1.8rem;
+    margin-bottom: 5px;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -62,5 +63,4 @@
   .container {
     width: 115%;
   }
-  .;
 }
