@@ -59,6 +59,9 @@
     position: static;
     transition: 0.3s all ease;
   } */
+  .notifications-bar {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -79,5 +82,15 @@
     bottom: 50px;
     left: 30px;
     transition: 0.3s all ease;
+  }
+}
+
+@media (max-width: 450px) and (min-height: 800px) {
+  .barcelona-cta {
+    position: static;
+    display: block;
+    left: none;
+    bottom: none;
+    margin: auto;
   }
 }
