@@ -40,4 +40,6 @@ if ($(window).width() < 451 && $(window).width() > 350) {
       }
     });
   });
+} else {
+  document.getElementsByClassName("barcelona-cta")[0].style.position = "static";
 }
