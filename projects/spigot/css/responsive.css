@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 450px) and (min-height: 730px) {
+@media (max-width: 450px) and (min-height: 726px) {
   .barcelona-cta {
     position: static;
     display: block;
