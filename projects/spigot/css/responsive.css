@@ -123,3 +123,9 @@
     margin: auto;
   }
 }
+
+@media (min-width: 992px) {
+  .header-img::before {
+    height: 700px;
+  }
+}
