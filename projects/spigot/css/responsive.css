@@ -67,7 +67,7 @@
 
 @media (max-width: 350px) {
   .container {
-    width: 110%;
+    width: 100%;
   }
   .barcelona-cta {
     font-size: 1rem;
@@ -76,13 +76,16 @@
     font-size: 0.6rem;
   }
   .value-box {
-    max-width: 400px;
+    min-width: 315px;
   }
   .notification-main {
     width: 285px;
   }
   .notification-inner {
     width: 275px;
+  }
+  .testimonial-box {
+    width: 315px;
   }
 }
 
