@@ -78,6 +78,12 @@
   .value-box {
     max-width: 400px;
   }
+  .notification-main {
+    width: 285px;
+  }
+  .notification-inner {
+    width: 275px;
+  }
 }
 
 @media (max-width: 450px) and (max-height: 729px) {

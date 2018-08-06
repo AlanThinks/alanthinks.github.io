@@ -52,7 +52,7 @@ header {
   top: 37px;
   margin-left: -77px;
   width: 400px;
-  height: 700px;
+  height: 620px;
   border-left: #cf0000 4px solid;
   border-top: rgba(0, 0, 0, 0) 4px solid;
   border-radius: 50%;
@@ -73,13 +73,15 @@ header .header-text {
 }
 
 /* NOTIFICATIONS */
-
+.owl-dots {
+  display: none;
+}
 .notifications-bar {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
-.notifications-outer {
+.notification-main {
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 15px rgb(31, 31, 31);
   width: 335px;
@@ -87,14 +89,14 @@ header .header-text {
   border-radius: 8px;
   padding: 5px;
 }
-.notification-main {
+.notification-inner {
   width: 325px;
   border: rgb(104, 108, 150) solid 2px;
   border-radius: 8px;
   padding: 10px;
 }
 
-.notification-main .notification-text {
+.notification-inner .notification-text {
   display: inline-block;
   width: 80%;
 }
@@ -105,6 +107,7 @@ header .header-text {
 }
 .notification-img img {
   width: 100%;
+  border-radius: 100%;
 }
 .notification-text p {
   display: inline-block;

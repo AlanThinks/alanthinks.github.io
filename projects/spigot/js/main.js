@@ -62,3 +62,17 @@ if ($(window).width() < 350) {
 // else {
 //   document.getElementsByClassName("barcelona-cta")[0].style.position = "static";
 // }
+
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel();
+});
+
+var owl = $(".owl-carousel");
+owl.owlCarousel({
+  items: 1,
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 2250,
+  autoplayHoverPause: true
+});
