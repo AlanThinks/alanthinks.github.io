@@ -264,6 +264,10 @@ footer {
   font-size: 0.8rem;
   font-weight: 100;
 }
+.testimonial-name img {
+  width: 20px;
+  margin-right: 4px;
+}
 
 /* MODAL */
 .modal-content {
