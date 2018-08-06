@@ -29,7 +29,7 @@ h2 {
 }
 .container {
   background: rgb(12, 0, 78);
-  padding-bottom: 65px;
+  padding-bottom: 105px;
   background-image: url(../img/blue-metal-bg2.jpg);
   background-size: contain;
   background-position: top;
@@ -227,7 +227,7 @@ footer {
   display: inline;
   width: 400px; /* Since it's an <img> tag it does apply */
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   transition: all 0.4s ease;
 }
