@@ -37,12 +37,6 @@ h2 {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 header {
   text-align: center;
   padding-top: 25px;
@@ -75,7 +69,7 @@ header {
 header .header-text {
   text-align: left;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: sub;
 }
 
 /* NOTIFICATIONS */
@@ -210,7 +204,10 @@ header .header-text {
 .btn-subtext {
   font-size: 0.9rem;
 }
-
+.btn-subtext-mobile {
+  display: none;
+  font-size: 0.9rem;
+}
 /* TESTIMONIA+
 LS */
 footer {
@@ -223,11 +220,6 @@ footer {
   bottom: 0;
   right: 0;
   transition: all 0.4s ease;
-}
-@media (max-width: 1100px) {
-  .fixed-img {
-    width: 300px;
-  }
 }
 
 .testimonial-box {
@@ -271,6 +263,7 @@ footer {
 .modal-content button,
 h5 {
   font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .modal-content span {
