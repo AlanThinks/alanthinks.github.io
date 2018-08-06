@@ -31,7 +31,7 @@ if ($(window).width() < 451 && $(window).width() > 350) {
       //   } else {
       //     button.removeClass("barcelona-cta-fix");
       //   }
-      if (scroll >= 145) {
+      if (scroll >= 125) {
         document.getElementsByClassName("barcelona-cta")[0].style.position =
           "static";
       } else {
@@ -40,6 +40,8 @@ if ($(window).width() < 451 && $(window).width() > 350) {
       }
     });
   });
-} else {
-  document.getElementsByClassName("barcelona-cta")[0].style.position = "static";
 }
+
+// else {
+//   document.getElementsByClassName("barcelona-cta")[0].style.position = "static";
+// }
