@@ -41,7 +41,13 @@
   .value-text {
     width: 65%;
     font-size: 0.9rem;
+    vertical-align: baseline;
   }
+
+  .value-item:nth-child(2) .value-text {
+    vertical-align: super;
+  }
+
   header .header-text {
     text-align: center;
   }
