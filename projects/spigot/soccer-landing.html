@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
@@ -83,38 +81,107 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="confirmationModalLabel">Interested in these other notifications?</h5>
+                    <div class="modal-title">
+                        <h5 id="confirmationModalLabel">Great!</h5>
+                        <h4>Would you like to stay up to date with these leagues?</h4>
+                    </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <ul>
-                        <li>Sports</li>
-                        <li>Football</li>
-                        <li>Real Madrid</li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="other-notifications-line-item">
+                        <a href="#">
+                            <div class="row mr-5">
+                                <div class="col-2">
+                                    <img src="./img/mls-logo.png" alt="">
+                                </div>
+                                <div class="col">MLS News</div>
+                                <div class="col-2">
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-notifications-line-item">
+                        <a href="#">
+                            <div class="row mr-5">
+                                <div class="col-2">
+                                    <img src="./img/nfl-logo.png" alt="">
+                                </div>
+                                <div class="col">NFL News</div>
+                                <div class="col-2">
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-notifications-line-item">
+                        <a href="#">
+                            <div class="row mr-5">
+                                <div class="col-2">
+                                    <img src="./img/nba-logo.png" alt="">
+                                </div>
+                                <div class="col">NBA News</div>
+                                <div class="col-2">
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-notifications-line-item">
+                        <a href="#">
+
+                            <div class="row mr-5">
+                                <div class="col-2">
+                                    <img src="./img/mlb-logo.png" alt="">
+                                </div>
+                                <div class="col">MLB News</div>
+                                <div class="col-2">
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-notifications-line-item">
+                        <a href="#">
+                            <div class="row mr-5">
+                                <div class="col-2">
+                                    <img src="./img/nhl-logo.png" alt="">
+                                </div>
+                                <div class="col">NFL News</div>
+                                <div class="col-2">
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Update</button>
-                </div> -->
+                <div class="modal-footer">
+                    <button data-dismiss="modal" href="#" type="button" class="btn btn-secondary">No, Thanks</button>
+                </div>
             </div>
         </div>
     </div>
     <script src="main.js "></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
         crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+    <!-- Push Notification Javscript -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script src="https://pushible.com/js/prompt?imp=adx"></script> -->
+
 </body>
 
 </html>

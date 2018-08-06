@@ -137,6 +137,7 @@ header .header-text {
 /* VALUE PROPOSITION SECTION */
 .value-points-section {
   margin-bottom: 45px;
+  font-size: 1.1rem;
 }
 .value-box {
   max-width: 475px;
@@ -217,7 +218,7 @@ footer {
 }
 .fixed-img {
   display: inline;
-  width: 400px;
+  width: 400px; /*Since it's an <img> tag it does apply*/
   position: fixed;
   bottom: 0;
   right: 0;
@@ -260,6 +261,7 @@ footer {
   font-size: 0.8rem;
   font-weight: 100;
 }
+
 /* MODAL */
 .modal-content {
   background: #000438;
@@ -268,7 +270,7 @@ footer {
 
 .modal-content button,
 h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .modal-content span {
@@ -277,4 +279,53 @@ h5 {
 
 .modal-header {
   border: 0;
+}
+
+.modal-body button {
+  font-size: 1rem;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  transition: 0.1s all ease;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.modal-body button:hover {
+  background: rgb(31, 104, 240);
+  color: white;
+}
+.modal-footer {
+  border: none;
+}
+
+.modal-footer button {
+  background-color: transparent;
+  font-size: 0.7rem;
+}
+
+.other-notifications-line-item {
+  padding: 15px;
+  border-bottom: 1px white solid;
+  transition: 0.1s all ease;
+  border-radius: 5px;
+}
+.other-notifications-line-item:hover {
+  background: rgb(0, 45, 129);
+  border-bottom: 1px white solid;
+}
+.other-notifications-line-item .col {
+  text-align: center;
+}
+
+.other-notifications-line-item img {
+  width: 50px;
+}
+
+.other-notifications-line-item > a {
+  color: white;
+  font-size: 1.2rem;
+  /* line-height: 2.5; */
+}
+.other-notifications-line-item .row .col {
+  line-height: 2.5;
 }
