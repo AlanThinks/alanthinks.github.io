@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) and (max-height: 725px) {
   .barcelona-cta {
     position: fixed;
     bottom: 50px;
