@@ -18,7 +18,7 @@ if ($(window).width() < 350) {
       }
     });
   });
-} else if ($(window).width() < 451 && $(window).height() > 729) {
+} else if ($(window).width() < 451 && $(window).height() > 715) {
   //   $(function() {
   //     var button = $(".barcelona-cta");
   //     $(window).scroll(function() {
