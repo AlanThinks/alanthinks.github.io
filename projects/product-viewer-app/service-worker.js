@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/projects/product-viewer/precache-manifest.214dd26947c3223de22997e14a060bef.js"
+  "/projects/product-viewer-app/precache-manifest.5cab1d55451f41577a12b763d999f487.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/projects/product-viewer/index.html", {
+workbox.routing.registerNavigationRoute("/projects/product-viewer-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
