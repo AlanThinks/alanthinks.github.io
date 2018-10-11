@@ -1,13 +1,13 @@
 {
-  "main.css": "/projects/product-viewer-app/static/css/main.b649e3a5.chunk.css",
-  "main.js": "/projects/product-viewer-app/static/js/main.bebbce44.chunk.js",
-  "main.js.map": "/projects/product-viewer-app/static/js/main.bebbce44.chunk.js.map",
+  "main.css": "/projects/product-viewer-app/static/css/main.a672cff5.chunk.css",
+  "main.js": "/projects/product-viewer-app/static/js/main.1400c803.chunk.js",
+  "main.js.map": "/projects/product-viewer-app/static/js/main.1400c803.chunk.js.map",
   "static/js/1.dda039a4.chunk.js": "/projects/product-viewer-app/static/js/1.dda039a4.chunk.js",
   "static/js/1.dda039a4.chunk.js.map": "/projects/product-viewer-app/static/js/1.dda039a4.chunk.js.map",
   "runtime~main.js": "/projects/product-viewer-app/static/js/runtime~main.62b8a1f5.js",
   "runtime~main.js.map": "/projects/product-viewer-app/static/js/runtime~main.62b8a1f5.js.map",
-  "static/css/main.b649e3a5.chunk.css.map": "/projects/product-viewer-app/static/css/main.b649e3a5.chunk.css.map",
+  "static/css/main.a672cff5.chunk.css.map": "/projects/product-viewer-app/static/css/main.a672cff5.chunk.css.map",
   "index.html": "/projects/product-viewer-app/index.html",
-  "precache-manifest.e556dc8727457ce3563f5d74ac221f30.js": "/projects/product-viewer-app/precache-manifest.e556dc8727457ce3563f5d74ac221f30.js",
+  "precache-manifest.485cf9aef1575f842a53a6a6e1b64ed7.js": "/projects/product-viewer-app/precache-manifest.485cf9aef1575f842a53a6a6e1b64ed7.js",
   "service-worker.js": "/projects/product-viewer-app/service-worker.js"
 }
