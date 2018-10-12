@@ -41,6 +41,12 @@ body {
 }
 
 /* Loader */
+img.spinner-logo {
+  position: relative;
+  width: 50%;
+  left: 22px;
+  top: 22px;
+}
 #page-preloader {
   position: fixed;
   z-index: 100500;
