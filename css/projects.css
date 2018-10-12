@@ -5,8 +5,7 @@ a {
   text-decoration: none;
 }
 
-site-btn {
-  font-size: 12px;
+.site-btn {
   line-height: 20px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -23,18 +22,18 @@ site-btn {
   transition: all 0.3s ease;
 }
 .btn-theme-blue-tr {
-  border: 3px solid;
+  border: 2px solid;
 }
 
 .btn-github {
   opacity: 0.6;
   margin-top: 5px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding: 5px;
   min-width: 100px;
   color: white;
   background: #ff005c;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 }
 .btn-github:hover {
   opacity: 1;
@@ -46,5 +45,33 @@ site-btn {
   position: fixed;
   top: 1.5%;
   right: 1.5%;
-  z-index: 1;
+  z-index: 10;
+}
+
+.btn-product-viewer {
+  top: 20px;
+  right: 15%;
+}
+
+.btn-product-viewer .btn-github {
+  opacity: 1;
+}
+.btn-product-viewer .btn-github:hover {
+  opacity: 1;
+  color: #ff005c;
+  background: white;
+  text-decoration: none;
+}
+
+.btn-product-viewer a {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .site-btn {
+    font-size: 0.7rem;
+  }
+  .btn-github {
+    padding: 3px;
+  }
 }
