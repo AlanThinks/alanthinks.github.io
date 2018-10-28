@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/projects/medical-audit-app/static/js/runtime~main.0e4ac6c0.js"
   },
   {
-    "revision": "6201d194c5e6142f8594",
-    "url": "/projects/medical-audit-app/static/js/main.6201d194.chunk.js"
+    "revision": "1c2e19e6579215551b1d",
+    "url": "/projects/medical-audit-app/static/js/main.1c2e19e6.chunk.js"
   },
   {
     "revision": "054136513faf33c2c911",
     "url": "/projects/medical-audit-app/static/js/1.05413651.chunk.js"
   },
   {
-    "revision": "6201d194c5e6142f8594",
-    "url": "/projects/medical-audit-app/static/css/main.b832cbf6.chunk.css"
+    "revision": "1c2e19e6579215551b1d",
+    "url": "/projects/medical-audit-app/static/css/main.9a660bcc.chunk.css"
   },
   {
-    "revision": "33b7a83d100ab100f563e3434619bbb2",
+    "revision": "a3326871f56d98d6f49e58adca37c6b7",
     "url": "/projects/medical-audit-app/index.html"
   }
 ];
