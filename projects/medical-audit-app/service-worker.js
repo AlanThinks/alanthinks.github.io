@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/projects/medical-audit-app/precache-manifest.a2f4f0a57a2751ff02afc419e01fbd4a.js"
+  "/projects/medical-audit-app/precache-manifest.f4346858096285e78093a1f8b36f874d.js"
 );
 
 workbox.clientsClaim();
