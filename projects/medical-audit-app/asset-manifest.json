@@ -1,13 +1,13 @@
 {
-  "main.css": "/projects/medical-audit-app/static/css/main.d4243c4e.chunk.css",
-  "main.js": "/projects/medical-audit-app/static/js/main.9301f9d7.chunk.js",
-  "main.js.map": "/projects/medical-audit-app/static/js/main.9301f9d7.chunk.js.map",
+  "main.css": "/projects/medical-audit-app/static/css/main.f44570ca.chunk.css",
+  "main.js": "/projects/medical-audit-app/static/js/main.d52d64ed.chunk.js",
+  "main.js.map": "/projects/medical-audit-app/static/js/main.d52d64ed.chunk.js.map",
   "static/js/1.21da4745.chunk.js": "/projects/medical-audit-app/static/js/1.21da4745.chunk.js",
   "static/js/1.21da4745.chunk.js.map": "/projects/medical-audit-app/static/js/1.21da4745.chunk.js.map",
   "runtime~main.js": "/projects/medical-audit-app/static/js/runtime~main.0e4ac6c0.js",
   "runtime~main.js.map": "/projects/medical-audit-app/static/js/runtime~main.0e4ac6c0.js.map",
-  "static/css/main.d4243c4e.chunk.css.map": "/projects/medical-audit-app/static/css/main.d4243c4e.chunk.css.map",
+  "static/css/main.f44570ca.chunk.css.map": "/projects/medical-audit-app/static/css/main.f44570ca.chunk.css.map",
   "index.html": "/projects/medical-audit-app/index.html",
-  "precache-manifest.1c713a62fb25ed67cb86c850d5642d66.js": "/projects/medical-audit-app/precache-manifest.1c713a62fb25ed67cb86c850d5642d66.js",
+  "precache-manifest.8821a54504aa39c9eb7c5127e0739992.js": "/projects/medical-audit-app/precache-manifest.8821a54504aa39c9eb7c5127e0739992.js",
   "service-worker.js": "/projects/medical-audit-app/service-worker.js"
 }
