@@ -10,7 +10,7 @@
 4.  The Project/Portfolio filter was done using [Isotope](https://isotope.metafizzy.co/), Highly recommended!
 5.  Although I did use [SmoothScroll](http://www.smoothscroll.net/) for some scrolling animation, I ended up using more some of my own I made, althought they were more redundant, it made it much easier for me to modify it for different buttons and anchors.
 6.  I wanted to update the original styling to Bootstrap 4.1, but it became a bigger hassle and I was not receiving much benefit from it. So stayed with 3.7.
-7.  For the form "backend" I just used [Formspree](http://formspree.io), although it hasn't worked properly since I changed to my production domain.
+7.  For the form "backend" I just used [Formspree](http://formspree.io), it's a temporary solution
 8.  The Project Thumbnails I made them all in Photoshop.
 9.  For the the "Typing Animation" I used [Typed.js](https://mattboldt.com/typed.js/) by [Matt Bold](https://github.com/mattboldt) _(Over 3K commits at the time of this writing!)_ .
 
