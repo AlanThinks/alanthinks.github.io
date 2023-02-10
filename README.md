@@ -1,6 +1,6 @@
-# AlanThinks' Portfolio Page
+# Alan's Personal Page
 
-👉 Check Out My Portfolio here [AlanThinks.com](http://alanthinks.com)
+👉 Check some of the projects I've worked on here [AlanThinks.com](http://alanthinks.com)
 
 ## How Was This Built?
 
