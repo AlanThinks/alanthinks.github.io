@@ -1,0 +1,54 @@
+{
+  "certifications": [
+    {
+      "id": "csm",
+      "name": "Certified ScrumMaster",
+      "issuer": "Scrum Alliance",
+      "image": "img/certifications/csm-scrum-master.png",
+      "credential_url": "https://www.credly.com/users/alanguevara/badges",
+      "date": "2023",
+      "description": "Certified ScrumMaster credential demonstrating expertise in Scrum framework and agile methodologies",
+      "category": "agile"
+    },
+    {
+      "id": "pspo",
+      "name": "Professional Scrum Product Owner I",
+      "issuer": "Scrum.org",
+      "image": "img/certifications/pspo-1.png",
+      "credential_url": "https://www.credly.com/users/alanguevara/badges",
+      "date": "2023",
+      "description": "Professional Scrum Product Owner certification for advanced product ownership skills",
+      "category": "agile"
+    },
+    {
+      "id": "aws-ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "issuer": "Amazon Web Services",
+      "image": "img/certifications/aws-ai-practitioner-early-adopter.png",
+      "credential_url": "https://www.credly.com/users/alanguevara/badges",
+      "date": "2024",
+      "description": "AWS AI Practitioner with Early Adopter status - expertise in AI/ML concepts and AWS AI services",
+      "category": "aws"
+    },
+    {
+      "id": "aws-solutions-architect",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services",
+      "image": "img/certifications/aws-solutions-architect-associate.png",
+      "credential_url": "https://www.credly.com/users/alanguevara/badges",
+      "date": "2024",
+      "description": "Comprehensive understanding of AWS services and ability to build secure, robust solutions",
+      "category": "aws"
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "image": "img/certifications/aws-cloud-practitioner-foundational.png",
+      "credential_url": "https://www.credly.com/users/alanguevara/badges",
+      "date": "2024",
+      "description": "Foundational understanding of AWS Cloud concepts and services",
+      "category": "aws"
+    }
+  ]
+}

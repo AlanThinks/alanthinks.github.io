@@ -1,0 +1,331 @@
+{
+  "featured_projects": [
+    {
+      "id": "mdc-ai-chatbot",
+      "title": "MDC AI Chatbot",
+      "role": "Technical Product Owner & Lead Developer",
+      "category": "ai",
+      "featured": true,
+      "challenge": "Miami Dade College faculty spent hours formatting and populating Canvas syllabi and quizzes, reducing time for actual teaching and student interaction.",
+      "solution": "Designed a RAG-based AI chatbot that ingests course templates and Canvas APIs, exposes an intuitive editor UI, and automates syllabus and quiz generation with domain-specific prompt templates.",
+      "results": [
+        "Reduced syllabus creation time by 85%",
+        "Accelerated course prep cycles from days to hours",
+        "Improved faculty satisfaction and teaching focus"
+      ],
+      "tech_stack": [
+        "LangChain",
+        "React",
+        "Canvas API",
+        "Vector DB",
+        "RAG",
+        "Node.js"
+      ],
+      "metrics": {
+        "time_saved": "85%",
+        "course_prep_cycle": "Days to Hours",
+        "user_satisfaction": "High"
+      },
+      "images": {
+        "thumbnail": "img/projects/mdc-chatbot-thumb.jpg",
+        "hero": "img/projects/mdc-chatbot-hero.jpg",
+        "architecture": "img/projects/mdc-chatbot-architecture.svg"
+      },
+      "links": {
+        "demo": "https://www.loom.com/embed/31c4d221936e47a0981c173e86ea8c33",
+        "code": "#",
+        "case_study": "#"
+      },
+      "testimonial": "Letter of recommendation available",
+      "description": "RAG-powered AI assistant for Miami Dade College Canvas LMS integration"
+    },
+    {
+      "id": "ai-pricing-agent",
+      "title": "AI Pricing Agent",
+      "role": "Project Manager & Technical Lead",
+      "category": "ai",
+      "featured": true,
+      "challenge": "Shipping and logistics company sales team spent over a week generating quotes due to complex pricing rules and high volume, causing delays and lost opportunities.",
+      "solution": "Built a RAG agent that ingests historic quotes, product/parcel metadata, and carrier rules, with human-in-the-loop verification for the first 1,000 quotes to ensure accuracy.",
+      "results": [
+        "Achieved 95% accuracy vs human quotes in controlled tests",
+        "Reduced quote turnaround from 1 week to 5 minutes",
+        "Generated email-ready quotes automatically"
+      ],
+      "tech_stack": [
+        "AWS Bedrock",
+        "MindStudio.ai",
+        "Vector DB",
+        "REST API",
+        "React",
+        "Python"
+      ],
+      "metrics": {
+        "accuracy": "95%",
+        "time_reduction": "1 week to 5 minutes",
+        "automation_rate": "95%"
+      },
+      "images": {
+        "thumbnail": "img/projects/pricing-agent-thumb.jpg",
+        "hero": "img/projects/pricing-agent-hero.jpg",
+        "architecture": "img/projects/pricing-agent-architecture.svg"
+      },
+      "links": {
+        "demo": "https://www.loom.com/embed/7ea0ae3276dd4e24a29567f380a808c9",
+        "code": "#",
+        "case_study": "#"
+      },
+      "testimonial": "Letter of recommendation available",
+      "description": "RAG chatbot for shipping and logistics pricing automation with 95% accuracy"
+    },
+    {
+      "id": "quantum-ml-research",
+      "title": "Quantum Machine Learning for Cancer Research",
+      "role": "Technical Product Owner & Team Lead",
+      "category": "ai",
+      "featured": true,
+      "challenge": "Intel/IBM Quantum Machine Learning competition required building a specialized team capable of data science, machine learning, and medical biotechnology to identify genetic mutations and biomarkers for Inflammatory Breast Cancer (IBC).",
+      "solution": "Led cross-functional team combining quantum machine learning, data science, and medical expertise to develop QML algorithms for cancer research, presenting findings to Intel and IBM.",
+      "results": [
+        "Built specialized team in less than a week",
+        "Successfully presented to Intel and IBM",
+        "Demonstrated research-to-MVP collaboration capabilities"
+      ],
+      "tech_stack": [
+        "Quantum ML",
+        "Python",
+        "Jupyter Notebooks",
+        "Data Science",
+        "Biotechnology"
+      ],
+      "metrics": {
+        "team_build_time": "< 1 week",
+        "presentation_success": "100%",
+        "stakeholder_engagement": "Intel & IBM"
+      },
+      "images": {
+        "thumbnail": "img/projects/quantum-ml-thumb.jpg",
+        "hero": "img/projects/quantum-ml-hero.jpg",
+        "architecture": "img/projects/quantum-ml-architecture.svg"
+      },
+      "links": {
+        "demo": "#",
+        "code": "#",
+        "case_study": "#"
+      },
+      "testimonial": "Letter of recommendation available",
+      "description": "Research-to-MVP collaboration using Quantum ML for cancer biomarker identification"
+    },
+    {
+      "id": "neonatal-nicu-app",
+      "title": "Neonatal NICU Dashboard",
+      "role": "UX/UI Designer & Front-End Developer",
+      "category": "healthcare",
+      "featured": true,
+      "challenge": "Florida hospitals needed a comprehensive dashboard for Neonatal NICU units with integrated medical billing system for streamlined operations.",
+      "solution": "Designed and developed full dashboard for NICU units with connected back-office medical billing application, ensuring HIPAA compliance and seamless data flow.",
+      "results": [
+        "Streamlined NICU operations across multiple hospitals",
+        "Integrated medical billing workflow",
+        "Improved patient care coordination"
+      ],
+      "tech_stack": [
+        "React",
+        "Healthcare UX",
+        "HIPAA Compliance",
+        "Medical Billing",
+        "Dashboard Design"
+      ],
+      "metrics": {
+        "hospitals_served": "Multiple FL hospitals",
+        "compliance": "HIPAA Certified",
+        "workflow_improvement": "Significant"
+      },
+      "images": {
+        "thumbnail": "img/projects/nicu-dashboard-thumb.jpg",
+        "hero": "img/projects/nicu-dashboard-hero.jpg",
+        "architecture": "img/projects/nicu-dashboard-architecture.svg"
+      },
+      "links": {
+        "demo": "#",
+        "code": "#",
+        "case_study": "#"
+      },
+      "description": "Full dashboard for Neonatal NICU units with integrated medical billing system"
+    },
+    {
+      "id": "team-performance-dashboard",
+      "title": "Team Performance Dashboard",
+      "role": "UX/UI Designer & Front-End Developer",
+      "category": "enterprise-saas",
+      "featured": true,
+      "challenge": "Medical recruiters needed a system to track and motivate team performance with real-time insights and gamification elements.",
+      "solution": "Designed comprehensive dashboard with performance tracking, motivational features, and gamification concepts to encourage user engagement and productivity.",
+      "results": [
+        "Improved team performance visibility",
+        "Enhanced user engagement through gamification",
+        "Streamlined recruitment workflow"
+      ],
+      "tech_stack": [
+        "React",
+        "Dashboard Design",
+        "Gamification",
+        "Performance Analytics",
+        "Recruitment Systems"
+      ],
+      "metrics": {
+        "engagement_increase": "Significant",
+        "performance_visibility": "Real-time",
+        "workflow_efficiency": "Improved"
+      },
+      "images": {
+        "thumbnail": "img/projects/team-dashboard-thumb.jpg",
+        "hero": "img/projects/team-dashboard-hero.jpg",
+        "architecture": "img/projects/team-dashboard-architecture.svg"
+      },
+      "links": {
+        "demo": "#",
+        "code": "#",
+        "case_study": "#"
+      },
+      "description": "Performance tracking dashboard for medical recruiters with gamification elements"
+    },
+    {
+      "id": "storyrocket",
+      "title": "Storyrocket Platform",
+      "role": "Product Owner & Product Manager",
+      "category": "enterprise-saas",
+      "featured": true,
+      "challenge": "Movie and TV producers needed a platform to connect with book and script writers, with a competition system for project submissions and ranking.",
+      "solution": "Conceptualized and designed a portfolio and social platform with competition system, gamified dashboard, and engagement features while maintaining live platform stability for thousands of users.",
+      "results": [
+        "Connected producers with writers globally",
+        "Implemented competition system for project submissions",
+        "Increased user engagement through gamification",
+        "Maintained platform stability during feature rollouts"
+      ],
+      "tech_stack": [
+        "Product Management",
+        "Social Platform",
+        "Competition Systems",
+        "Gamification",
+        "User Engagement"
+      ],
+      "metrics": {
+        "users": "Thousands",
+        "feature_rollout": "Zero downtime",
+        "engagement": "Increased"
+      },
+      "images": {
+        "thumbnail": "img/projects/storyrocket-thumb.jpg",
+        "hero": "img/projects/storyrocket-hero.jpg",
+        "architecture": "img/projects/storyrocket-architecture.svg"
+      },
+      "links": {
+        "demo": "#",
+        "code": "#",
+        "case_study": "#"
+      },
+      "description": "Portfolio and social platform connecting Movie/TV producers with writers"
+    }
+  ],
+  "legacy_projects": [
+    {
+      "id": "medical-audit-app",
+      "title": "Medical Dashboard React App",
+      "role": "UX/UI Designer & Developer",
+      "category": "healthcare",
+      "featured": false,
+      "challenge": "Medical company needed internal audit management system",
+      "solution": "100% design and implementation from wireframing to development",
+      "results": ["Complete audit management solution"],
+      "tech_stack": [
+        "React",
+        "JavaScript",
+        "Context API",
+        "React-Router v4",
+        "HTML5/CSS3",
+        "Bootstrap"
+      ],
+      "images": {
+        "thumbnail": "img/projects/medical-audit-app.jpg"
+      },
+      "links": {
+        "code": "https://github.com/alanthinks/medical-audit-app",
+        "demo": "projects/medical-audit-app/"
+      },
+      "description": "Dashboard for medical company internal audit management"
+    },
+    {
+      "id": "medmap",
+      "title": "MedMap",
+      "role": "Front-End Developer",
+      "category": "healthcare",
+      "featured": false,
+      "challenge": "Filter and assign thousands of physicians based on multiple factors",
+      "solution": "Web and mobile application with advanced filtering capabilities",
+      "results": ["Efficient physician assignment system"],
+      "tech_stack": [
+        "React",
+        "JavaScript",
+        "Context API",
+        "React-Router v4",
+        "HTML5/CSS3"
+      ],
+      "images": {
+        "thumbnail": "img/projects/medmap.gif"
+      },
+      "links": {
+        "code": "https://github.com/alanthinks/product-viewer-app",
+        "demo": "projects/product-viewer-app/"
+      },
+      "description": "Physician filtering and assignment web/mobile application"
+    },
+    {
+      "id": "paper-todo-app",
+      "title": "React Paper To-Do List App",
+      "role": "Front-End Developer",
+      "category": "mobile-web",
+      "featured": false,
+      "challenge": "Create an intuitive task management application",
+      "solution": "React-based todo app with create, edit, delete, and check-off functionality",
+      "results": ["Functional task management system"],
+      "tech_stack": ["React", "JavaScript", "Bootstrap", "HTML5/CSS3"],
+      "images": {
+        "thumbnail": "img/projects/papertodolist1.jpg"
+      },
+      "links": {
+        "code": "https://github.com/alanthinks/paper-to-do-list",
+        "demo": "projects/paper-to-do-list-app/index.html"
+      },
+      "description": "Create, edit, delete, and check off tasks in a paper-like interface"
+    },
+    {
+      "id": "openfield-app",
+      "title": "Sports Management App",
+      "role": "Full-Stack Developer & Designer",
+      "category": "mobile-web",
+      "featured": false,
+      "challenge": "UNDER CONSTRUCTION - Full sports management platform",
+      "solution": "Complete UX/UI design, wireframing, prototyping, front-end and back-end development",
+      "results": ["In development"],
+      "tech_stack": [
+        "Adobe XD",
+        "HTML5/CSS3",
+        "JavaScript",
+        "React",
+        "Python/Django",
+        "REST Framework",
+        "MySQL",
+        "MongoDB"
+      ],
+      "images": {
+        "thumbnail": "img/projects/openfield1.jpg"
+      },
+      "links": {
+        "demo": "http://openfieldapp.com"
+      },
+      "description": "Full sports management platform (under construction)"
+    }
+  ]
+}

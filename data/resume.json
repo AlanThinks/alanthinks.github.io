@@ -1,0 +1,171 @@
+{
+  "work_history": [
+    {
+      "id": "capitol-security",
+      "company": "Capitol Security Services Inc.",
+      "role": "Sr. IT Project Manager",
+      "location": "Hialeah, FL",
+      "start_date": "04/2024",
+      "end_date": "Present",
+      "achievements": [
+        "Designed and deployed secure remote access systems with cybersecurity compliance",
+        "Migrated to cloud-based accounting with automated multi-cloud backups",
+        "Spearheaded adoption of AI tools ensuring compliance and operational integration",
+        "Designed prototypes and roadmaps for a scheduling software platform"
+      ],
+      "tech_stack": [
+        "Cybersecurity",
+        "Cloud Migration",
+        "AI Integration",
+        "QuickBooks",
+        "HR Systems"
+      ]
+    },
+    {
+      "id": "digital-consultant",
+      "company": "Digital Product Leader Consultant",
+      "role": "Consultant",
+      "location": "Pembroke Pines, FL",
+      "start_date": "01/2023",
+      "end_date": "Present",
+      "achievements": [
+        "Led Quantum Machine Learning for Cancer Research using QML to identify genetic mutations",
+        "Developed RAG-powered AI assistant for Miami Dade College Canvas LMS",
+        "PM for logistics company RAG chatbot on AWS Bedrock with 95% accuracy",
+        "Launched F1 E-Commerce Shopify Store globally, $12K revenue first month"
+      ],
+      "tech_stack": [
+        "QML",
+        "RAG",
+        "AWS Bedrock",
+        "Canvas LMS",
+        "Shopify",
+        "LangChain"
+      ]
+    },
+    {
+      "id": "cobuild-sr-pm",
+      "company": "Cobuild Lab",
+      "role": "Sr. Product Manager",
+      "location": "Miami, FL",
+      "start_date": "10/2019",
+      "end_date": "12/2022",
+      "achievements": [
+        "Led agile development of 35+ software products in healthcare, SaaS, e-commerce",
+        "Managed multiple cross-functional teams across 3 continents",
+        "Negotiated contracts, growing revenue to $1M+ in 2.5 years",
+        "Founded Cobuild UX Lab training program for LATAM students"
+      ],
+      "tech_stack": [
+        "Jira",
+        "Confluence",
+        "GitHub",
+        "SQL",
+        "Agile",
+        "Cross-functional Teams"
+      ]
+    },
+    {
+      "id": "cobuild-tpo",
+      "company": "Cobuild Lab",
+      "role": "Technical Product Owner",
+      "location": "Miami, FL",
+      "start_date": "06/2019",
+      "end_date": "10/2019",
+      "achievements": [
+        "Managed 3 projects in education, entertainment, and enterprise sectors",
+        "Coordinated developers & designers, delivered on time/budget",
+        "Led stakeholder presentations, backlog refinement, delivery roadmaps",
+        "Implemented agile processes boosting team productivity"
+      ],
+      "tech_stack": [
+        "Agile",
+        "Scrum",
+        "Stakeholder Management",
+        "Backlog Management"
+      ]
+    },
+    {
+      "id": "envision-healthcare",
+      "company": "Envision Healthcare",
+      "role": "Senior Product Designer & Front-End Engineer",
+      "location": "Plantation, FL",
+      "start_date": "06/2018",
+      "end_date": "06/2019",
+      "achievements": [
+        "Designed and developed web/mobile apps for $14B+ healthcare company",
+        "Improved UX for radiology, anesthesiology, billing, NICU apps",
+        "Directed offshore design/dev team and collaborated with backend developers"
+      ],
+      "tech_stack": [
+        "React",
+        "Mobile Development",
+        "Healthcare UX",
+        "Team Leadership"
+      ]
+    },
+    {
+      "id": "red-panda",
+      "company": "Red Panda Studios",
+      "role": "Head of Product Development & Marketing",
+      "location": "Miramar, FL",
+      "start_date": "02/2011",
+      "end_date": "06/2018",
+      "achievements": [
+        "Designed and launched Vollat USB & tablet products (14 variants)",
+        "Negotiated retail distribution globally",
+        "Built and led digital marketing & sales team"
+      ],
+      "tech_stack": [
+        "Product Development",
+        "Hardware Design",
+        "Global Distribution",
+        "Marketing"
+      ]
+    },
+    {
+      "id": "asa-college",
+      "company": "ASA College",
+      "role": "Digital Marketing Coordinator",
+      "location": "Miami, FL",
+      "start_date": "01/2014",
+      "end_date": "01/2016",
+      "achievements": [
+        "Led multi-channel advertising campaigns, reaching 50K+ prospects",
+        "Delivered 5,000+ qualified leads",
+        "Directed digital transformation, website revamp, and activations"
+      ],
+      "tech_stack": [
+        "Digital Marketing",
+        "Lead Generation",
+        "Campaign Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Applied Artificial Intelligence",
+      "institution": "Miami Dade College",
+      "status": "In Progress",
+      "dates": "2023–2026"
+    },
+    {
+      "degree": "A.S. Applied Artificial Intelligence",
+      "institution": "Miami Dade College",
+      "status": "Completed",
+      "dates": "2023–2025"
+    },
+    {
+      "degree": "A.A. Computer Science",
+      "institution": "Miami Dade College",
+      "status": "Completed",
+      "dates": "2023–2025"
+    },
+    {
+      "degree": "Film/TV & Motion Graphics",
+      "institution": "Savannah College of Art & Design",
+      "status": "Completed",
+      "dates": "2004–2007"
+    }
+  ]
+}
