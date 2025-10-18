@@ -1,4 +1,4 @@
-o# Portfolio Migration & Enhancement Plan
+# Portfolio Migration & Enhancement Plan
 
 **Repo:** [alanthinks.github.io](https://github.com/AlanThinks/alanthinks.github.io)  
 **Site:** main branch: [alanthinks.com](https://alanthinks.com)
