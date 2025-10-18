@@ -1,0 +1,243 @@
+{
+  "projects": [
+    {
+      "id": "medical-audit-app",
+      "title": "Medical Dashboard React App",
+      "description": "This is the Dashboard of an App for a Medical Company to help them manage their internal audits, I did 100% of the design & implementation from Wireframing to Development.",
+      "image": "img/projects/medical-audit-app.jpg",
+      "categories": ["archive", "healthcare-hipaa", "web-apps"],
+      "buttons": [
+        {
+          "text": "Code",
+          "icon": "fab fa-github",
+          "url": "https://github.com/alanthinks/medical-audit-app",
+          "type": "github"
+        }
+      ],
+      "link": "projects/medical-audit-app/",
+      "tags": ["UX/UI Design in Adobe XD", "React", "Javascript", "Context API", "React-Router v4", "HTML5/CSS3", "Bootstrap"]
+    },
+    {
+      "id": "product-viewer-app",
+      "title": "MedMap",
+      "description": "A web and mobile application which helps filter and assign thousands of physicians based on multiple factors",
+      "image": "img/projects/medmap.gif",
+      "categories": ["archive", "healthcare-hipaa", "web-apps"],
+      "buttons": [
+        {
+          "text": "Code",
+          "icon": "fab fa-github",
+          "url": "https://github.com/alanthinks/product-viewer-app",
+          "type": "github"
+        }
+      ],
+      "link": "projects/product-viewer-app/",
+      "tags": ["React", "Javascript", "Context API", "React-Router v4", "HTML5/CSS3"]
+    },
+    {
+      "id": "paper-to-do-list-app",
+      "title": "React \"Paper\" To-Do-List App",
+      "description": "Create New Tasks, Edit Them, Delete Them, Check Them Off",
+      "image": "img/projects/papertodolist1.jpg",
+      "categories": ["archive", "web-apps"],
+      "buttons": [
+        {
+          "text": "Code",
+          "icon": "fab fa-github",
+          "url": "https://github.com/alanthinks/paper-to-do-list",
+          "type": "github"
+        }
+      ],
+      "link": "projects/paper-to-do-list-app/index.html",
+      "tags": ["React", "Javascript", "Bootstrap", "HTML5/CSS3"]
+    },
+    {
+      "id": "fast-hook-video",
+      "title": "Client Testimonial Video",
+      "description": "Shot with 2 Cameras, Created Animations, Edited",
+      "videoUrl": "https://www.youtube.com/embed/fZZH7T4O_w8?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Sony A6000", "Premiere Pro", "After Effects", "Photoshop"]
+    },
+    {
+      "id": "openfield",
+      "title": "Sports Management App",
+      "description": "UNDER CONSTRUCTION: <br />Full UX/UI Design, Wireframing, Prototyping ~ Full Front-End Development ~ and Back-End Development",
+      "image": "img/projects/openfield1.jpg",
+      "categories": ["archive", "web-apps"],
+      "buttons": [
+        {
+          "text": "Under Construction",
+          "icon": "fab fa-github",
+          "url": "http://openfieldapp.com",
+          "type": "info"
+        }
+      ],
+      "link": "http://openfieldapp.com",
+      "tags": ["Adobe XD", "HTML5/CSS3", "Javascript", "React", "Pyhon/Django", "REST Framework", "MySQL", "MongoDB"]
+    },
+    {
+      "id": "spigot-landing",
+      "title": "Responsive Landing Page & Display Ads",
+      "description": "UX/UI Design, Graphic Assets Design, Full HTML/CSS Coding, Time Lapse Video",
+      "videoUrl": "https://www.youtube.com/embed/lVw7047IjaU?rel=0&amp;showinfo=0",
+      "categories": ["archive", "web-design", "video"],
+      "buttons": [
+        {
+          "text": "Live",
+          "icon": "far fa-smile",
+          "url": "/projects/spigot/soccer-landing.html",
+          "type": "live",
+          "position": "right-120"
+        },
+        {
+          "text": "Code",
+          "icon": "fab fa-github",
+          "url": "https://github.com/alanthinks/alanthinks.github.io/blob/master/projects/spigot/soccer-landing.html",
+          "type": "github"
+        }
+      ],
+      "tags": ["HTML5/CSS3", "Bootstrap", "Javscript", "Illustrator", "Photoshop", "Premiere Pro"]
+    },
+    {
+      "id": "beckham-soccer-vlog",
+      "title": "David Beckham's Soccer Team Vlog",
+      "description": "Had an incredible time vlogging this journey with the Southern Legion at the Miami Soccer Team Announcement",
+      "videoUrl": "https://www.youtube.com/embed/k9DEQIED4T4?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Sony A6000", "Premiere Pro", "Photoshop"]
+    },
+    {
+      "id": "soccer-designs",
+      "title": "Soccer Team Logo & Uniform Designs",
+      "description": "Designed vector logos and uniforms designs, and completed the uniform's sublimation production",
+      "image": "img/projects/epic-fc.jpg",
+      "categories": ["archive", "graphic-design"],
+      "buttons": [
+        {
+          "text": "Details",
+          "icon": "fas fa-info-circle",
+          "url": "#",
+          "type": "modal",
+          "modal": "project-modal-soccer-designs"
+        }
+      ],
+      "tags": ["Illustrator", "Photoshop", "Sublimation Printing"]
+    },
+    {
+      "id": "emerge-miami",
+      "title": "eMerge Americas Miami Trailer",
+      "description": "Series of Vlogs highlighting Miami's Premium Tech & Entrepreneurship Conference",
+      "videoUrl": "https://www.youtube.com/embed/RIVmmoehlbg?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Sony A6000", "Premiere Pro", "Photoshop"]
+    },
+    {
+      "id": "alanthinks-portfolio",
+      "title": "AlanThinks.com",
+      "description": "Make sure you check out the Readme file in the repository where I explain a little more on how I built this page",
+      "image": "img/projects/alanthinks-portolio.jpg",
+      "categories": ["archive", "web-design"],
+      "buttons": [
+        {
+          "text": "Code",
+          "icon": "fab fa-github",
+          "url": "https://github.com/alanthinks/alanthinks.github.io",
+          "type": "github"
+        }
+      ],
+      "link": "#top-main-section",
+      "linkId": "alanthinks-portfolio-project",
+      "tags": ["HTML5/CSS3", "Bootstrap", "Javascript", "jQuery", "Photoshop"]
+    },
+    {
+      "id": "responsive-email",
+      "title": "Responsive E-Mail Template",
+      "description": "Designed art, created copy, coded e-mail, cleaned up list & distributed using MailChimp",
+      "image": "img/projects/thornton-email.jpg",
+      "categories": ["archive", "web-design"],
+      "buttons": [
+        {
+          "text": "Live",
+          "icon": "far fa-smile",
+          "url": "/projects/responsive-email-template/index.html",
+          "type": "live"
+        }
+      ],
+      "link": "/projects/responsive-email-template/index.html",
+      "tags": ["HTML5/CSS3", "Illustrator", "Photoshop"]
+    },
+    {
+      "id": "alanthinks-interviews",
+      "title": "AlanThinks Content & Interviews",
+      "description": "From Steve Wozniak to Marcelo Claure, I have covered and interviewed all types of entreprenurs",
+      "videoUrl": "https://www.youtube.com/embed/tkwPJrddCo8?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Sony A6000", "Premiere Pro", "Photoshop"]
+    },
+    {
+      "id": "waffles-beer",
+      "title": "Waffles & Beer",
+      "description": "Impromptu Storytelling Highlighting Waffles, Beer, and Technology in Miami",
+      "videoUrl": "https://www.youtube.com/embed/QlLbOwF5cwY?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Sony A6000", "GoPro", "Premiere Pro"]
+    },
+    {
+      "id": "motion-graphics",
+      "title": "Motion Graphics Countdown(up)",
+      "description": "Used during a live event to announce next years edition of that event",
+      "videoUrl": "https://www.youtube.com/embed/t1rGvmzNmDg?rel=0&amp;showinfo=0",
+      "categories": ["archive", "video"],
+      "buttons": [
+        {
+          "text": "My YouTube",
+          "icon": "fab fa-youtube",
+          "url": "https://youtube.com/alanthinks?sub_confirmation=1",
+          "type": "youtube"
+        }
+      ],
+      "tags": ["Final Cut X", "After Effects", "Illustrator"]
+    }
+  ]
+}
