@@ -22,7 +22,10 @@ jobs:
 
       - name: Install dependencies
         working-directory: react
-        run: npm ci
+        run: |
+          # Ensure lockfile matches package.json in PR context
+          npm install --package-lock-only
+          npm ci
 
       - name: Build
         working-directory: react

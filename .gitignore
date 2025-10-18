@@ -9,3 +9,7 @@
 /_ignore
 videotest.html
 /projects/spigot/_source/
+
+# React workspace artifacts
+/react/node_modules/
+/react/dist/

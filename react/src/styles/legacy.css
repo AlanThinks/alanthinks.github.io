@@ -1,0 +1,16 @@
+/*
+  Legacy global styles aggregator for the existing site.
+  This file makes the current CSS available to the React app
+  without altering visuals. It only aggregates existing styles.
+*/
+
+@import url("@legacy-css/bootstrap.min.css");
+@import url("@legacy-css/materialdesignicons.min.css");
+@import url("@legacy-css/main.css");
+@import url("@legacy-css/typography.css");
+@import url("@legacy-css/color.css");
+@import url("@legacy-css/responsive.css");
+@import url("@legacy-css/custom.css");
+@import url("@legacy-css/projects.css");
+@import url("@legacy-css/slideshow.css");
+@import url("@legacy-css/collection.css");
