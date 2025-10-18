@@ -1,121 +1,140 @@
 # Copilot Instructions for AlanThinks Portfolio
 
-## Project Overview
+## Overview
 This is a personal portfolio website hosted on GitHub Pages (alanthinks.github.io). It's a static site showcasing projects, resume, and contact information for Alan Guevara, a **Senior AI Technical Product Owner** specializing in **AI/MCP agents** and **cloud-native products**.
 
 Alan leads teams that build production-grade AI agents and cloud-native SaaS. He combines 7+ years leading cross‑functional product teams. As a CSM®, PSPO™, and AWS‑certified AI practitioner and Solutions Architect, he's shipped 35+ React web & mobile apps and delivered RAG agent MVPs on AWS Bedrock, raising revenue, automating workflows, and improving task efficiency for Enterprise and Start-Up teams.
 
+
 ## Architecture
 
-### Main Site Structure
-- **Root**: Single-page application in vanilla HTML/CSS/JS
-- **Projects**: Self-contained subdirectories with compiled React apps (medical-audit-app, product-viewer-app, paper-to-do-list-app)
-- **CSS**: Modular CSS architecture via `collection.css` - imports Bootstrap, typography, custom styles, and Material Design Icons
-- **JS**: jQuery-based interactions, Isotope for filtering, custom smooth scrolling, gradient backgrounds
-- **Data**: JSON Project Descriptions not currently in use (`data/projects.json`) 
+### Main Site (Static)
+- **Entry**: `index.html` - Single-page application with inline project cards, modals (resume, project details)
+- **CSS**: `css/collection.css` imports Bootstrap 3.7, custom styles, Material Design Icons
+- **JS**: jQuery 2.2.3 + Isotope.js for filtering, custom smooth scroll (900ms animations)
+- **Projects**: Hardcoded in `index.html` - `data/projects.json` exists but is NOT used
 
-### Key Components
-- `index.html` - Main portfolio page with embedded modals, project showcase placeholder, and contact section
-- `data/projects.json` - Project data with categories, tags, images/videos, and button configurations, this is not currently in use
-- `js/main.js` - jQuery-based interactions, smooth scrolling, mobile menu
-- `css/collection.css` - CSS import hub (Bootstrap, custom styles, Material Design Icons)
-- `projects/*/` - Pre-built React apps (deployed static builds, NOT source code)
+### Embedded React Projects (Pre-Built)
+Located in `/projects/*/` - these are **production builds only**, NOT source code:
+- `medical-audit-app/` - Context API, React Router v4, service worker
+- `product-viewer-app/` - E-commerce demo
+- `paper-to-do-list-app/` - To-do app with cookies easter egg
+- Static builds with hashed filenames in `/static/js/` and `/static/css/`
 
-## Technology Stack
+## Critical Workflows
 
-### Main Site
-- **Frontend**: HTML5, CSS3, jQuery 2.2.3, Bootstrap 3.7
-- **Animations**: Custom smooth scroll, gradient backgrounds (`js/gradient.js`)
-- **Filtering**: Isotope.js for project grid filtering
-- **Icons**: Material Design Icons (`materialdesignicons.min.css`)
+### Adding a New Project
+1. Add HTML block to `.projects-wrapper` in `index.html` (see existing pattern)
+2. Include category classes for Isotope filtering: `.web-apps`, `.graphic-design`, `.video`
+3. Position buttons with `.btn-github` class - uses absolute positioning with specific coordinates
+4. Images go in `/img/projects/`, videos use YouTube embed URLs
+5. Manually test Isotope filter buttons
 
-### Embedded Projects (Pre-Built)
-- React apps with Webpack builds (medical-audit-app uses Context API, React Router v4)
-- Service workers for offline capabilities
-- Static deployments with hashed filenames
-
-## Development Patterns
-
-
-### CSS Architecture
+### Editing Styles
+**Never edit `collection.css` directly** - it only contains imports:
 ```css
-/* collection.css is the main import file */
 @import url("bootstrap.min.css");
 @import url("typography.css");
 @import url("main.css");
 @import url("responsive.css");
 @import url("color.css");
+@import url("custom.css");
 ```
-When editing styles, modify the specific imported CSS file, NOT collection.css itself.
+Edit the specific imported file instead.
 
-### Smooth Scrolling Convention
-Custom jQuery-based smooth scroll to sections. All scroll animations use:
+### Smooth Scroll Pattern
+Every smooth scroll button follows this exact pattern in `js/main.js`:
 ```javascript
-$("html, body").animate({ scrollTop: $(target).position().top }, 900)
+$("#section-big-btn").on("click", function() {
+  const targetSection = $("#section-name").position().top
+  $("html, body").animate({ scrollTop: targetSection }, 900)
+})
 ```
-Timing is consistently 900ms. Button IDs match pattern: `#[section]-big-btn`.
+- Timing is always 900ms
+- Uses `.position().top` not `.offset().top`
+- Button ID format: `#[section]-big-btn`
 
-### Project Grid Filtering
-Uses Isotope with data-filter attributes:
-- Filter buttons in `.projects-filter` with `data-filter` attributes (e.g., `data-filter=".ai-agents"`)
-- Project items use classes matching filters (automatically generated from JSON `categories` array)
-- Isotope is re-initialized in `js/projects.js` after projects load
+## Project-Specific Patterns
 
-### Modal Pattern
-Bootstrap 3 modals 
- Soccer designs modal (`#project-modal-soccer-designs`)
- resume modal might be duplicated, known issue
+### Isotope Filtering
+Filter buttons must match project card classes:
+```html
+<!-- Filter Button -->
+<li data-filter=".web-apps">Web Apps</li>
 
-## File Organization Principles
+<!-- Project Card -->
+<div class="col-sm-6 project-item web-apps graphic-design">
+```
+Isotope is initialized in `js/main.js` with masonry layout, 0→1 opacity transitions.
+
+### Modal Management
+Bootstrap 3 modals with scroll compensation:
+- On open: adjusts `body` padding-right to account for scrollbar width
+- On close: resets padding
+- Multiple modals stack properly (see `js/main.js` lines ~218-233)
+- Resume modal ID: `#resume-modal`, Soccer designs: `#project-modal-soccer-designs`
+
+### Mobile Menu
+Toggle with `.mobile-btn` and `.close-mob-menu` in `js/main.js`. Hidden on `lg` and `md` breakpoints (`hidden-md hidden-lg` classes).
+
+## File Organization
 
 ### DO NOT EDIT
-- `/projects/*/static/` - Pre-built React apps (compiled/minified)
-- `/fonts/` - Material Design Icon fonts
-- `js/bootstrap.min.js`, `js/jquery-*.min.js` - Vendor libraries
-- `js/isotope.pkgd.min.js`, `js/imagesloaded.pkgd.min.js` - Isotope library
+- `/projects/*/static/` - Compiled React builds
+- `/fonts/` - Material Design Icons
+- `js/bootstrap.min.js`, `js/jquery-*.min.js`, `js/isotope.pkgd.min.js` - Vendor libs
+- `data/projects.json` - Not connected to site
 
-### Edit With Care
-- `index.html` - Large monolithic file. Section IDs matter for navigation. Projects are now dynamically loaded (empty `.projects-wrapper`).
-- `js/main.js` - jQuery spaghetti but functional. Smooth scroll timing is standardized.
+### Edit With Care  
+- `index.html` - 600+ lines, tightly coupled section IDs
+- `js/main.js` - Legacy jQuery but functional
 
-### Frequently Modified
-- `/css/*.css` (except collection.css - edit imports instead)
-- `/img/` - Image assets
-- Meta tags and positioning text in index.html
+### Safe to Modify
+- `css/main.css`, `css/custom.css`, `css/responsive.css`
+- `/img/projects/` - Project thumbnails
 
-## Current Branch Context
-Working on `portfolio-update` branch. The `react-migration` branch is not in use. 
+## Bootstrap 3 Responsive Classes
+- `xs` <768px, `sm` ≥768px, `md` ≥992px, `lg` ≥1200px
+- Mobile menu shows at `<992px`
+- Use `hidden-sm hidden-xs` or `hidden-md hidden-lg` for responsive hiding
 
-Portfolio positioning: **Senior AI Technical Product Owner** focusing on AI/MCP agents and cloud-native products (AWS Bedrock, RAG agents, HIPAA-compliant healthcare apps).
+## Button Styling Classes
+```css
+.btn-github /* Absolute positioned, top-right of project cards */
+.btn-card /* Overlay buttons on project hover */
+.btn-theme-blue-tr /* Transparent blue theme button */
+.site-btn /* Base button class */
+```
+GitHub buttons require `z-index: 1` and specific positioning: `top: -5px; right: 37px`
 
-## Key Conventions
+## Deployment
+- **Method**: Direct push to `main` branch → GitHub Pages auto-deploys
+- **Domain**: CNAME file points to custom domain
+- **No CI/CD**: Changes go live immediately on push
+- **React Projects**: Pre-build locally before committing to `/projects/*/`
 
-### Branding Colors
+## Common Issues
 
+### Isotope Not Working
+- Check `.projects-wrapper` has `imagesLoaded()` called before `isotope('layout')`
+- Verify filter `data-filter` values match project card classes exactly
 
-### Responsive Breakpoints
-Bootstrap 3 breakpoints: xs (<768px), sm (≥768px), md (≥992px), lg (≥1200px)
-Mobile menu triggers at <992px (`hidden-md hidden-lg` classes)
+### Smooth Scroll Broken
+- Ensure button ID exists and section ID exists  
+- Check timing is 900ms consistently
+- Verify `.position().top` not `.offset().top`
 
-### Project Card Button Classes
-- `.btn-card` - Base button class for project overlay buttons
-- `.btn-card-first` - First button (typical position)
-- `.btn-card-second` - Second button (if needed, positioned differently)
-- `z-index: 1` - Required for buttons to appear above project content
+### Modal Scroll Jump
+- Bootstrap 3 auto-compensates with padding-right
+- Custom handler in `js/main.js` manages multiple modals
 
-## GitHub Pages Deployment
-- Direct push to `main` (or configured branch) deploys automatically
-- CNAME file points to custom domain
-- No build process for main site (static HTML/CSS/JS)
-- React projects are pre-built before adding to repo
+## Testing Checklist
+- [ ] Test all Isotope filters (`All projects`, `Video`, `Web Apps`, etc.)
+- [ ] Verify smooth scroll from top section to all anchors
+- [ ] Check mobile menu toggle `<992px` breakpoint
+- [ ] Test modals (resume, project details) open/close without scroll jump
+- [ ] Validate responsive layout at all Bootstrap breakpoints
 
-## Common Gotchas
-
-3. **Video vs. Image Projects**: Use `videoUrl` for YouTube embeds, `image` for static images. Never both.
-
-4. **Scroll Padding**: Modal open/close adjusts body padding-right for scrollbar compensation.
-
-## Testing Approach
-- Manual browser testing across breakpoints
-- Test Isotope filtering after adding new projects
-- Test video embeds with proper YouTube URL format
+## Branch Context
+- **Current**: `portfolio-update` (active working branch)
+- Portfolio focus: AI/MCP agents, cloud-native SaaS, AWS Bedrock RAG agents, HIPAA healthcare apps
