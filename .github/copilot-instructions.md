@@ -4,7 +4,87 @@
 This is a personal portfolio website hosted on GitHub Pages (alanthinks.github.io). It's a static site showcasing projects, resume, and contact information for Alan Guevara, a **Senior AI Technical Product Owner** specializing in **AI/MCP agents** and **cloud-native products**.
 
 Alan leads teams that build production-grade AI agents and cloud-native SaaS. He combines 7+ years leading cross‑functional product teams. As a CSM®, PSPO™, and AWS‑certified AI practitioner and Solutions Architect, he's shipped 35+ React web & mobile apps and delivered RAG agent MVPs on AWS Bedrock, raising revenue, automating workflows, and improving task efficiency for Enterprise and Start-Up teams.
+---
+## Canonical Project List (from index.html)
+This is the single source of truth for all projects. Use this list to add, update, or remove projects in the future.
 
+### Project List (as of Oct 2025)
+
+1. Medical Dashboard React App
+2. Product Viewer App
+3. Paper To-Do List App
+4. Client Testimonial Video
+5. Sports Management App (OpenField)
+6. Responsive Landing Page & Display Ads
+7. David Beckham's Soccer Team Vlog
+8. Soccer Team Logo & Uniform Designs
+9. eMerge Americas Miami Trailer
+10. AlanThinks.com
+11. Responsive E-Mail Template
+12. AlanThinks Content & Interviews
+13. Waffles & Beer
+14. Motion Graphics Countdown(up)
+
+### New Project Required Data
+
+id: Unique identifier (used in URLs and modals)
+title: Project title
+description: Short description for project card
+image: Thumbnail image path (relative to img/projects/)
+categories: Array of category strings for Isotope filtering (e.g., "web-apps", "graphic-design", "video")
+buttons: Array of button objects with text, icon, url, type (e.g., "github", "demo")
+link: URL to project details page (relative to site root)
+tags: Array of technology/skill strings for project details modal
+### Example Project Card HTML
+```html
+<div class="col-sm-6 col-xs-12 project-item web-apps graphic-design">
+  <a style="z-index: 1" target="_blank" class="site-btn btn-theme-blue-tr btn-github"
+      href="https://github.com/alanthinks/example-project">
+      <i class="fab fa-github"></i>&nbsp Code
+  </a>
+  <a href="projects/example-project/" class="project">
+      <div class="project-name">
+          <h5>Example Project Title</h5>
+          <em>Short description of the project.</em>
+      </div>
+      <div class="project-img">
+          <img src="img/projects/example-project.jpg" alt="">
+      </div>
+      <div class="project-single-desc">
+          <ul class="tags">
+              <li>React</li>
+              <li>Javascript</li>
+              <li>HTML5/CSS3</li>
+          </ul>
+      </div>
+  </a>
+</div>
+```
+
+### Example Modal HTML (for project details)
+```html
+<div class="modal fade" id="project-modal-example" tabindex="-1" role="dialog" aria-labelledby="#project-modal-example" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <i class="fas fa-times x-close-icon" data-dismiss="modal" aria-hidden="true"></i>
+        <div class="about-me">
+          <div class="about-title">
+            <h3>Example Project Modal Title</h3>
+          </div>
+          <div class="opacity-box">
+            <p>Project details and description go here.</p>
+          </div>
+        </div>
+        <div class="modal-buttons">
+          <a class="site-btn btn-theme-blue btn-small-width" data-dismiss="modal" aria-hidden="true">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+---
 
 ## Architecture
 
@@ -138,3 +218,14 @@ GitHub buttons require `z-index: 1` and specific positioning: `top: -5px; right:
 ## Branch Context
 - **Current**: `portfolio-update` (active working branch)
 - Portfolio focus: AI/MCP agents, cloud-native SaaS, AWS Bedrock RAG agents, HIPAA healthcare apps
+
+# Future Plans
+
+## jQuery/Isotope Upgrade
+- Plan to upgrade jQuery and Isotope.js to latest stable versions.
+- Before upgrading, refactor all `$(window).load()` to `$(window).on('load')` and test Isotope filtering and all custom jQuery code for compatibility.
+
+## Slideshow Refactor
+- Refactor the current global slideshow implementation (used in soccer modal) into a reusable module or class.
+- Goal: Allow multiple slideshows for different project cards/modals, each with their own state.
+- Example: `SoccerSlideshow.init('#project-modal-soccer-designs .slideshow-container')`.

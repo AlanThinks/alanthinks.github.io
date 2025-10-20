@@ -331,7 +331,5 @@ $(document).ready(function() {
   // });
 
   //init share buttons
-  if ($("span").is("#sharing-links")) {
-    $("#sharing-links").socialLikes()
-  }
+  // ...existing code...
 })
