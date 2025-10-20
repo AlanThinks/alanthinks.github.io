@@ -10,20 +10,24 @@ This is the single source of truth for all projects. Use this list to add, updat
 
 ### Project List (as of Oct 2025)
 
-1. Medical Dashboard React App
-2. Product Viewer App
-3. Paper To-Do List App
-4. Client Testimonial Video
-5. Sports Management App (OpenField)
-6. Responsive Landing Page & Display Ads
-7. David Beckham's Soccer Team Vlog
-8. Soccer Team Logo & Uniform Designs
-9. eMerge Americas Miami Trailer
-10. AlanThinks.com
-11. Responsive E-Mail Template
-12. AlanThinks Content & Interviews
-13. Waffles & Beer
-14. Motion Graphics Countdown(up)
+1. MDC AI Chatbot
+2. AI Pricing & Quoting Agent
+3. Envision Healthcare Apps
+4. E-commerce Shopify Store Launch
+5. Medical Dashboard React App
+6. Product Viewer App
+7. Paper To-Do List App
+8. Client Testimonial Video
+9. Sports Management App (OpenField)
+10. Responsive Landing Page & Display Ads
+11. David Beckham's Soccer Team Vlog
+12. Soccer Team Logo & Uniform Designs
+13. eMerge Americas Miami Trailer
+14. AlanThinks.com
+15. Responsive E-Mail Template
+16. AlanThinks Content & Interviews
+17. Waffles & Beer
+18. Motion Graphics Countdown(up)
 
 ### New Project Required Data
 
