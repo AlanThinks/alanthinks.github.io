@@ -319,17 +319,4 @@ $(document).ready(function() {
       }
     })
   }
-
-  //init custom scroll
-  // $(".scroll-viewport").mCustomScrollbar({
-  //   axis: "x",
-  //   theme: "dark",
-  //   mouseWheel: {
-  //     enable: false
-  //   },
-  //   scrollInertia: 0
-  // });
-
-  //init share buttons
-  // ...existing code...
 })

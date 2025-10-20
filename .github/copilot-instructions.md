@@ -35,6 +35,7 @@ categories: Array of category strings for Isotope filtering (e.g., "web-apps", "
 buttons: Array of button objects with text, icon, url, type (e.g., "github", "demo")
 link: URL to project details page (relative to site root)
 tags: Array of technology/skill strings for project details modal
+
 ### Example Project Card HTML
 ```html
 <div class="col-sm-6 col-xs-12 project-item web-apps graphic-design">
