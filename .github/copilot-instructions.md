@@ -40,7 +40,7 @@ buttons: Array of button objects with text, icon, url, type (e.g., "github", "de
 link: URL to project details page (relative to site root)
 tags: Array of technology/skill strings for project details modal
 
-
+### New Project Data Template
 id: 
 title:
 description: 
