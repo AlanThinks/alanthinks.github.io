@@ -36,6 +36,16 @@ buttons: Array of button objects with text, icon, url, type (e.g., "github", "de
 link: URL to project details page (relative to site root)
 tags: Array of technology/skill strings for project details modal
 
+
+id: 
+title:
+description: 
+image: 
+categories: 
+buttons: 
+link: 
+tags: 
+
 ### Example Project Card HTML
 ```html
 <div class="col-sm-6 col-xs-12 project-item web-apps graphic-design">
@@ -230,3 +240,196 @@ GitHub buttons require `z-index: 1` and specific positioning: `top: -5px; right:
 - Refactor the current global slideshow implementation (used in soccer modal) into a reusable module or class.
 - Goal: Allow multiple slideshows for different project cards/modals, each with their own state.
 - Example: `SoccerSlideshow.init('#project-modal-soccer-designs .slideshow-container')`.
+
+## Isotope Filters
+
+### How the Isotope filters work
+
+**Initialization (`js/main.js`):**
+- The grid is initialized on the element with class `.projects-wrapper`
+- Each project card must have the class `.project-item` (this is Isotope's `itemSelector`)
+- Masonry layout is used, with `columnWidth` equal to a `.project-item`
+- Hidden/visible styles use opacity transitions (0→1)
+
+**Filter click handler (`js/main.js`):**
+- Clicking a filter button inside `.projects-filter ul li`:
+  1. Removes `.active` class from all filter buttons
+  2. Adds `.active` to the clicked button
+  3. Reads the clicked element's `data-filter` attribute value (e.g., `"*"` or `".video"`)
+  4. Calls Isotope with `{ filter: <data-filter> }`
+
+**ImagesLoaded integration:**
+- After images load, Isotope is told to re-layout so cards position correctly
+- Pattern: `$grid.imagesLoaded().progress(() => $grid.isotope("layout"))`
+
+**The exact code in `js/main.js`:**
+```javascript
+// Grid initialization
+var $grid = $(".projects-wrapper").isotope({
+  itemSelector: ".project-item",
+  hiddenStyle: { opacity: 0 },
+  visibleStyle: { opacity: 1 },
+  masonry: { columnWidth: ".project-item" }
+})
+
+// Click handler
+$(".projects-filter ul li").on("click", function() {
+  $(".projects-filter ul li").removeClass("active")
+  $(this).addClass("active")
+  var filterValue = $(this).attr("data-filter")
+  $(".projects-wrapper").isotope({ filter: filterValue })
+})
+```
+
+### Where to update filters
+
+**Filter buttons location (`index.html`):**
+- In the "Early Projects" section under the div with class `.projects-filter`
+- Inside `<ul class="list-inline">`
+
+**Current filter markup pattern:**
+```html
+<li class="active" data-filter="*">All projects</li>
+<li data-filter=".ai-ml-agents">AI/ML Agents</li>
+<li data-filter=".hipaa-healthcare">HIPAA Compliant Apps</li>
+<li data-filter=".e-commerce">E-Commerce</li>
+<li data-filter=".ux-ui-design">UX/UI & Design</li>
+<li data-filter=".archive">Archive</li>
+```
+
+**How to add a new filter category:**
+1. Add a new list item inside `.projects-filter ul`:
+   ```html
+   <li data-filter=".ai-agents">AI Agents</li>
+   ```
+2. Ensure project cards that should show for that filter include the class `ai-agents` on their outer `.project-item` container
+
+**How to rename a category:**
+- Update both:
+  1. The filter button's `data-filter` value (e.g., from `.web-apps` to `.apps`)
+  2. All project cards' category class from `web-apps` to `apps`
+
+**Important:** The `data-filter` uses CSS selectors (leading dot for classes). The class on the card should NOT include a dot.
+- Filter: `data-filter=".web-design"`
+- Card class: `class="project-item web-design"` (no dot in class name)
+
+### How project cards are updated
+
+**Required class:**
+- Every card must include `project-item` (Isotope's itemSelector)
+
+**Category classes:**
+- Add one or more category classes to the same element so they can be filtered
+- Supported categories: `ai-ml-agents`, `hipaa-healthcare`, `e-commerce`, `ux-ui-design`, `archive`
+- Legacy categories still in use: `video`, `web-apps`, `web-design`, `graphic-design`
+
+**Example correct structure:**
+```html
+<div class="col-sm-6 col-xs-12 project-item web-apps graphic-design">
+  <!-- Card content -->
+</div>
+```
+
+**Multi-category cards:**
+- A card can have multiple category classes
+- Example: `project-item web-apps graphic-design web-design`
+- This card will show when filtering for "Web Apps" OR "Web Design" OR "UX/UI & Design"
+
+### What happens when you click a filter
+
+**Filter behavior:**
+- `data-filter="*"` shows everything (all `.project-item` elements)
+- `data-filter=".video"` shows only items whose `.project-item` also has the class `video`
+- `data-filter=".web-apps"` shows only items with class `web-apps`
+
+**Combine categories:**
+- You can add multiple category classes to a single card
+- The card will appear when ANY of its categories match the active filter
+
+**Visual feedback:**
+- The active filter gets the `.active` class (highlighted in UI)
+- Non-matching cards fade out (opacity: 0)
+- Matching cards fade in (opacity: 1)
+- Isotope animates the layout transition
+
+### Where everything lives
+
+**Isotope behavior:**
+- `js/main.js` - initialization and click handler (lines ~120-145)
+
+**Filter definitions:**
+- `index.html` - inside the `.projects-filter` list (around line 445-452)
+
+**Card categories:**
+- `index.html` - under the `.projects-wrapper` grid
+- Each card is a column like: `<div class="col-sm-6 col-xs-12 project-item ...category-classes...">`
+
+**Assets:**
+- Project thumbnails: `/img/projects/`
+- YouTube embeds: Direct URLs in iframe `src` attributes
+
+### How to update, step by step
+
+**Add a new category:**
+1. In `index.html`, find `.projects-filter ul` (around line 447)
+2. Add: `<li data-filter=".my-category">My Category</li>`
+3. Add `my-category` class to any project cards you want included
+4. Test by clicking the new filter button
+
+**Remove a category:**
+1. Remove the `<li>` for that category from `.projects-filter ul`
+2. Optionally remove the category class from cards (not required if filter is gone)
+
+**Add a new project card:**
+1. Duplicate an existing `.project-item` block in `index.html`
+2. Assign appropriate category classes (e.g., `project-item web-apps`)
+3. Update title, description, image path, and button URLs
+4. Place image in `/img/projects/`
+5. Test all relevant filter buttons
+
+**Rename a category:**
+1. Change the `data-filter` value in the filter button (e.g., `.web-design` → `.design`)
+2. Update the class on ALL affected `.project-item` cards (e.g., `web-design` → `design`)
+3. Test filter to ensure cards still appear
+
+**Change filter order:**
+- Reorder the `<li>` elements in `.projects-filter ul`
+- No JavaScript changes needed
+
+### Notable Quirks
+
+**imagesLoaded dependency:**
+- Already wired: `$grid.imagesLoaded().progress(() => $grid.isotope("layout"))`
+- If you add heavy images, this ensures the layout recalculates as they finish loading
+- Without this, cards may overlap before images load
+
+**Active filter class:**
+- The UI shows which filter is active by toggling `.active` on the clicked filter `<li>`
+- CSS styles the `.active` class differently (usually highlighted or underlined)
+
+**CSS selector syntax:**
+- Filter `data-filter` attributes use CSS selector syntax (dot prefix for classes)
+- Card `class` attributes use standard HTML class names (no dot prefix)
+- Mismatch will cause filter to fail silently
+
+**Column widths:**
+- Isotope uses `.project-item` as the `columnWidth` for masonry layout
+- All cards should be the same width for consistent layout
+- Current: `col-sm-6` (2 columns on tablets/desktop), `col-xs-12` (1 column on mobile)
+
+**Multiple categories per card:**
+- Powerful feature: one card can belong to multiple filters
+- Use case: "Medical Dashboard" is both `web-apps` AND `graphic-design` AND `web-design`
+- Appears in all three category filters
+
+**Filter persistence:**
+- Active filter does NOT persist across page reloads
+- Always defaults to "All projects" (`data-filter="*"`) with `.active` class
+- To change default: move `.active` class to a different `<li>` in HTML
+
+**Performance:**
+- Isotope is fast for small/medium grids (< 100 items)
+- Current portfolio has ~14 items (very performant)
+- No pagination or lazy loading needed
+
+
